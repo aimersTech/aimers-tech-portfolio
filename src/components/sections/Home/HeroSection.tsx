@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ContactForm() {
+function HeroSection() {
   return (
     <div>
-      form
+      hero
     </div>
   )
 }
 
-export default ContactForm
+export default HeroSection
