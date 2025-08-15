@@ -1,0 +1,18 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
