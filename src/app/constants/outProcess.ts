@@ -1,5 +1,3 @@
-
-
 export interface IOurProcess {
     step: number,
     title: string,
