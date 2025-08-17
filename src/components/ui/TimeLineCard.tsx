@@ -43,7 +43,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ process, isEven }) => {
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-300 mb-8 leading-relaxed">
+                <p className="text-gray-300 mb-8 text-lg leading-relaxed">
                     {process.description}
                 </p>
 
@@ -51,7 +51,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ process, isEven }) => {
                     {process.options.map((option, optionIndex) => (
                     <div key={optionIndex} className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-[#1DE5DB] rounded-full flex-shrink-0"></div>
-                        <span className="text-gray-200 text-sm font-medium">
+                        <span className="text-gray-200 text-[15px] font-medium">
                         {option}
                         </span>
                     </div>
