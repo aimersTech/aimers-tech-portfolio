@@ -1,8 +1,6 @@
 //  Global Types
 export type ID = string | number;
 
-
-
 //  User Types
 export interface User {
   id: ID;
@@ -23,4 +21,16 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   createdAt?: string;
+}
+
+export interface IOurProcess {
+  step: number;
+  title: string;
+  description: string;
+  options: string[];
+}
+
+export interface TimelineCardProps {
+  process: IOurProcess;
+  isEven: boolean;
 }

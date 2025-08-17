@@ -1,12 +1,11 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import OurProcessSection from "@/components/sections/OurProcess/OurProcessSection";
+import WhatWeDoSection from "@/components/sections/WhatWeDo/WhatWeDo";
 
 export default function Home() {
   return (
     <div>
-      <Button className="text-button">helllo</Button> 
-      <Button className="bg-button">helllo</Button>
+      <OurProcessSection />
+      <WhatWeDoSection />
     </div>
   );
 }
-//global css color set
