@@ -1,5 +1,3 @@
-//Demo Constants
-
 export interface IAimers {
     name: string
     expertise: string
@@ -8,13 +6,33 @@ export interface IAimers {
 
 export const Aimers: IAimers[] = [
     {
-        name: "Rean",
-        expertise: "Front End Developer",
-        location: "Khagan, Savar"
+        name: "Md. Rayhan Shorker",
+        expertise: "MERN Stack Developer",
+        location: "Dhaka, Bangladesh"
     },
     {
-        name: "Tahsin",
+        name: "Rezuan Alam Rean",
+        expertise: "Front End Developer",
+        location: "Dhaka, Bangladesh"
+    },
+    {
+        name: "Naeem Biswass Niloy",
         expertise: "Software Engineer",
-        location: "Khagan, Savar"
-    }
+        location: "Dhaka, Bangladesh"
+    },
+    {
+        name: "Touhidur Rahman Mahin",
+        expertise: "Lead Consultant, Visual Designer",
+        location: "Dhaka, Bangladesh"
+    },
+    {
+        name: "MD. Azizul Hakim",
+        expertise: "UI/UX Designer",
+        location: "Dhaka, Bangladesh"
+    },
+    {
+        name: "MD. Tahsin Ferdous",
+        expertise: "Software Engineer",
+        location: "Dhaka, Bangladesh"
+    },
 ]
