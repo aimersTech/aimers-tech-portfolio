@@ -1,3 +1,4 @@
+import ProjectSection from "@/components/ProjectSection/ProjectSection";
 import OurProcessSection from "@/components/sections/OurProcess/OurProcessSection";
 import TechStackSection from "@/components/sections/TechStack/TechStackSection";
 import WhatWeDoSection from "@/components/sections/WhatWeDo/WhatWeDo";
@@ -8,6 +9,7 @@ export default function Home() {
       <OurProcessSection />
       <WhatWeDoSection />
       <TechStackSection/>
+      <ProjectSection/>
     </div>
   );
 }
