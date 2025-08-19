@@ -1,5 +1,5 @@
 import React from "react";
-import { OurValue } from "@/app/constants/ourValue";
+import { OurValue } from "@/constants/ourValue";
 import { Lightbulb, Eye, Shield, Brain, Leaf, Heart } from "lucide-react";
 
 const OurValues = () => {

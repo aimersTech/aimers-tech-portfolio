@@ -1,6 +1,6 @@
 import React from "react";
 import TimelineCard from "@/components/ui/TimeLineCard";
-import { OurProcess } from "@/app/constants/outProcess";
+import { OurProcess } from "@/constants/outProcess";
 
 function OurProcessSection() {
   return (
