@@ -1,12 +1,12 @@
 import React from "react";
-import { OurValue } from "@/app/constants/ourValue";
+import { OurValue } from "@/constants/ourValue";
 import { Lightbulb, Eye, Shield, Brain, Leaf, Heart } from "lucide-react";
 
 const OurValues = () => {
   return (
     <div className="">
       <div className="text-center py-16">
-        <h2 className="text-white text-[40px] underline font-semibold mb-6">
+        <h2 className="text-white text-[40px] underline font-ro font-semibold mb-6 ">
           Our <span className="text-[#1DE5DB]">Value</span>
         </h2>
         <p className="text-white text-base lg:text-xl max-w-6xl mx-auto leading-relaxed">
@@ -17,7 +17,7 @@ const OurValues = () => {
           solutions that truly matter.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 pb-16">
         {OurValue.map((value, index) => {
           const icons = [
             <Lightbulb key={index} className="w-8 h-8 text-yellow-400" />,

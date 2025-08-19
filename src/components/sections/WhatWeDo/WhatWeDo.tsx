@@ -1,5 +1,5 @@
 import React from "react";
-import { WhatWeDo } from "@/app/constants/whatWeDo";
+import { WhatWeDo } from "@/constants/whatWeDo";
 import {
   Code2,
   BrainCircuit,
