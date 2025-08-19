@@ -45,6 +45,8 @@
   --radius-xl: calc(var(--radius) + 4px);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
+
+  --breakpoint-xs: 503px
 }
 
 :root {

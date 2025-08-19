@@ -10,18 +10,18 @@ import { MapPin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container flex flex-col gap-10 mx-auto py-10">
-        <div className="flex justify-between">
+      <div className="container flex flex-wrap flex-col gap-10 mx-auto px-4 md:px-0 py-10">
+        <div className="flex justify-between flex-wrap">
           {/* first section with logo  */}
 
           <div className="flex flex-col gap-5 max-w-sm">
-            <div className=" flex items-center gap-3">
+            <div className=" flex justify-center xs:justify-start items-center gap-3">
               <Image
                 src={logo}
                 alt="aimers-tech-logo"
-                className="h-15 w-15 rounded-full"
+                className="h-10 w-10 md:h-15 md:w-15 rounded-full"
               />
-              <h2 className="text-button font-bold font-dmsans text-xl">
+              <h2 className="text-button font-bold font-dmsans text-lg md:text-xl">
                 Aimers Tech Global
               </h2>
             </div>
@@ -40,7 +40,7 @@ export default function Footer() {
           {/* company */}
           <div className="flex flex-col gap-5 mt-3">
             <div className="w-fit">
-              <h2 className="text-white font-bold font-dmsans text-xl">
+              <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.company.heading}
               </h2>
               <hr className="h-1 text-white" />
@@ -56,7 +56,7 @@ export default function Footer() {
           {/* services */}
           <div className="flex flex-col gap-5 mt-3">
             <div className="w-fit">
-              <h2 className="text-white font-bold font-dmsans text-xl">
+              <h2 className="text-white font-bold font-dmsans text-lg md:text-x">
                 {footerData.services.heading}
               </h2>
               <hr className="h-1 text-white" />
@@ -72,7 +72,7 @@ export default function Footer() {
           {/* support */}
           <div className="flex flex-col gap-5 mt-3">
             <div className="w-fit">
-              <h2 className="text-white font-bold font-dmsans text-xl">
+              <h2 className="text-white font-bold font-dmsans text-lg md:text-x">
                 {footerData.support.heading}
               </h2>
               <hr className="h-1 text-white" />
@@ -86,9 +86,9 @@ export default function Footer() {
         </div>
 
         {/* Socials and Copyrights */}
-        <div className="relative flex w-full items-center justify-between">
+        <div className="relative flex flex-col gap-3 md:gap-0 md:flex-row w-full items-center justify-between">
           {/* Left side - icons */}
-          <div className="flex gap-5 items-center">
+          <div className="flex gap-3 md:gap-5 items-center">
             {footerSocialIcons.map((icn: TIcon, idx) => {
               const Icon = icn.icon;
               return <Icon key={idx} className="text-[#00D9FF]" />;
@@ -96,7 +96,7 @@ export default function Footer() {
           </div>
 
           {/* Center - copyright */}
-          <p className="absolute left-1/2 -translate-x-1/2 text-white text-sm">
+          <p className="md:absolute  md:top-0 left-1/2 md:-translate-x-1/2 text-white text-sm">
             © {new Date().getFullYear()} Aimers Tech. All rights reserved.
           </p>
         </div>
