@@ -1,4 +1,4 @@
-import { Aimers } from '@/app/constants/aimersDetails';
+import { Aimers } from '@/constants/aimersDetails';
 import AvatarCard from '@/components/ui/AvatarCard';
 
 const KnowTheAimers = () => {
