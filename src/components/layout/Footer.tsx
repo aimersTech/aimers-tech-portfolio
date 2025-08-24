@@ -10,12 +10,11 @@ import { MapPin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container flex flex-wrap flex-col gap-10 mx-auto px-4 md:px-0 py-10">
-        <div className="flex justify-between flex-wrap">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-10">
+        <div className="flex justify-between flex-wrap gap-8">
           {/* first section with logo  */}
-
           <div className="flex flex-col gap-5 max-w-sm">
-            <div className=" flex justify-center xs:justify-start items-center gap-3">
+            <div className="flex justify-center xs:justify-start items-center gap-3">
               <Image
                 src={logo}
                 alt="aimers-tech-logo"
@@ -47,7 +46,6 @@ export default function Footer() {
             </div>
             {footerData.company.options.map((optn: string, idx: number) => (
               <p key={idx} className="text-white text-sm">
-                {" "}
                 {optn}
               </p>
             ))}
@@ -56,14 +54,13 @@ export default function Footer() {
           {/* services */}
           <div className="flex flex-col gap-5 mt-3">
             <div className="w-fit">
-              <h2 className="text-white font-bold font-dmsans text-lg md:text-x">
+              <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.services.heading}
               </h2>
               <hr className="h-1 text-white" />
             </div>
             {footerData.services.options.map((optn: string, idx: number) => (
               <p key={idx} className="text-white text-sm">
-                {" "}
                 {optn}
               </p>
             ))}
@@ -72,7 +69,7 @@ export default function Footer() {
           {/* support */}
           <div className="flex flex-col gap-5 mt-3">
             <div className="w-fit">
-              <h2 className="text-white font-bold font-dmsans text-lg md:text-x">
+              <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.support.heading}
               </h2>
               <hr className="h-1 text-white" />
@@ -96,11 +93,12 @@ export default function Footer() {
           </div>
 
           {/* Center - copyright */}
-          <p className="md:absolute  md:top-0 left-1/2 md:-translate-x-1/2 text-white text-sm">
+          <p className="md:absolute md:top-0 left-1/2 md:-translate-x-1/2 text-white text-sm">
             © {new Date().getFullYear()} Aimers Tech. All rights reserved.
           </p>
         </div>
-        <hr className="bg-white"/>
+
+        <hr className="bg-white" />
       </div>
     </footer>
   );
