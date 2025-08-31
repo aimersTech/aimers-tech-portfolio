@@ -1,11 +1,16 @@
 import KnowTheAimers from '@/components/sections/AboutUs/KnowTheAimers/KnowTheAimers';
 import OurValues from '@/components/sections/AboutUs/OurValues/OurValues';
+import TechGlobal from '@/components/sections/AboutUs/TechGlobal/TechGlobal';
+import TechStory from '@/components/sections/AboutUs/TechStory/TechStory';
 import WantToJoinUs from '@/components/sections/AboutUs/WantToJoinUs/WantToJoinUs';
 
 function page() {
   return (
     <div className='bg-black min-h-screen w-full font-sans'>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <TechGlobal />
+        <TechStory />
         <OurValues />
         <KnowTheAimers />
         <WantToJoinUs />
