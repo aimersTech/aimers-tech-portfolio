@@ -8,7 +8,7 @@ import { Featured, Articles } from "@/constants/exploreInsights";
 const ExploreInsights = () => {
   return (
     <section className="bg-[#2F2F2F] text-white py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12">
           Explore <span className="text-cyan-400">Insights</span> For

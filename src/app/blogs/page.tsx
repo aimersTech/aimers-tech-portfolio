@@ -6,7 +6,7 @@ import { Blogs } from "@/constants/blogList";
 const page = () => {
   return (
     <section className="bg-black text-white py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Section Header */}
         <h2 className="text-5xl font-bold text-center mb-12">
           <span className="text-cyan-400 underline">Blogs</span>
