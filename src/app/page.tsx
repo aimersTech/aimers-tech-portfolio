@@ -1,7 +1,6 @@
 import ContactForm from "@/components/forms/ContactForm";
 import ProjectSection from "@/components/sections/Home/ProjectSection";
 import KnowTheAimers from "@/components/sections/AboutUs/KnowTheAimers/KnowTheAimers";
-import Banner from "@/components/Banners/Banner";
 import ExploreInsights from "@/components/sections/Home/ExploreInsights";
 import AboutUsSection from "@/components/sections/Home/About";
 import AimersTech from "@/components/sections/Home/AimersTech";

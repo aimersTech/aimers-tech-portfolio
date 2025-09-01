@@ -3,7 +3,7 @@ import { blogDetails } from "@/constants/blogDetails"
 import Image from "next/image"
 import { useParams } from "next/navigation"
 
-const page = () => {
+const Page = () => {
     const {id} = useParams()
     console.log(id)
     return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-10 font-dmsans text-white">
@@ -38,15 +38,15 @@ const page = () => {
             <Image src={blogDetails.bannerImg} alt="blog-banner"/>
         </div>
         <h2 className="text-3xl font-bold">
-           {blogDetails.subheading} 
+           {blogDetails.subheading}
         </h2>
         <p className="text-sm">
             {blogDetails.body1}
         </p>
         <p className="text-sm">
-          {blogDetails.body2}  
+          {blogDetails.body2}
         </p>
     </div>
 }
 
-export default page
+export default Page;

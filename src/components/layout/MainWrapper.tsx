@@ -1,6 +1,5 @@
 import Header from "../shared/Header";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
 
 export default function MainWrapper({ children }: { children: React.ReactNode }) {
   return (

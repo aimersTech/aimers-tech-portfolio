@@ -1,45 +1,46 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const AboutUsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Sample images - replace these URLs with your actual images
-  type WidthKey = 'w-64' | 'w-68' | 'w-72' | 'w-80' | 'w-88' | 'w-96';
+  type WidthKey = "w-64" | "w-68" | "w-72" | "w-80" | "w-88" | "w-96";
 
   const images: { url: string; width: WidthKey; alt: string }[] = [
     {
-      url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      width: 'w-80',
-      alt: 'Team collaboration'
+      url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      width: "w-80",
+      alt: "Team collaboration",
     },
     {
-      url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      width: 'w-64',
-      alt: 'Team meeting'
+      url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      width: "w-64",
+      alt: "Team meeting",
     },
     {
-      url: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
-      width: 'w-96',
-      alt: 'Office workspace'
+      url: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80",
+      width: "w-96",
+      alt: "Office workspace",
     },
     {
-      url: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80',
-      width: 'w-72',
-      alt: 'Team discussion'
+      url: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+      width: "w-72",
+      alt: "Team discussion",
     },
     {
-      url: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=850&q=80',
-      width: 'w-88',
-      alt: 'Team planning'
+      url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=850&q=80",
+      width: "w-88",
+      alt: "Team planning",
     },
     {
-      url: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=650&q=80',
-      width: 'w-68',
-      alt: 'Remote work'
-    }
+      url: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=650&q=80",
+      width: "w-68",
+      alt: "Remote work",
+    },
   ];
 
   // Auto-slide effect
@@ -55,12 +56,12 @@ const AboutUsSection = () => {
   const getTransform = () => {
     // Approximate widths in pixels (Tailwind CSS equivalents)
     const widthMap: Record<WidthKey, number> = {
-      'w-64': 256,
-      'w-68': 272,
-      'w-72': 288,
-      'w-80': 320,
-      'w-88': 352,
-      'w-96': 384
+      "w-64": 256,
+      "w-68": 272,
+      "w-72": 288,
+      "w-80": 320,
+      "w-88": 352,
+      "w-96": 384,
     };
     let totalWidth = 0;
     for (let i = 0; i < currentIndex; i++) {
@@ -80,12 +81,15 @@ const AboutUsSection = () => {
         {/* Header Content */}
         <div className="text-center mb-16 space-y-6">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            About <span className="text-cyan-400 underline decoration-cyan-400 decoration-2 underline-offset-4">Us</span>
+            About{" "}
+            <span className="text-cyan-400 underline decoration-cyan-400 decoration-2 underline-offset-4">
+              Us
+            </span>
           </h2>
 
           <p className="text-gray-300 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            We're an optimistic and gratitude-filled group of remote workers dedicated
-            to creating a product our customers will use and love.
+            We are an optimistic and gratitude-filled group of remote workers
+            dedicated to creating a product our customers will use and love.
           </p>
 
           {/* CTA Button */}
@@ -105,15 +109,17 @@ const AboutUsSection = () => {
               style={{ transform: getTransform() }}
             >
               {/* Duplicate images for infinite loop effect */}
+
               {[...images, ...images, ...images].map((image, index) => (
                 <div
                   key={index}
-                  className={`${image.width} h-64 lg:h-80 flex-shrink-0 rounded-2xl overflow-hidden shadow-2xl`}
+                  className={`${image.width} h-64 lg:h-80 flex-shrink-0 rounded-2xl overflow-hidden shadow-2xl relative`}
                 >
-                  <img
+                  <Image
                     src={image.url}
                     alt={image.alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               ))}
@@ -131,10 +137,11 @@ const AboutUsSection = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                  ? 'bg-cyan-400 scale-125'
-                  : 'bg-gray-600 hover:bg-gray-400'
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentIndex
+                  ? "bg-cyan-400 scale-125"
+                  : "bg-gray-600 hover:bg-gray-400"
+              }`}
             />
           ))}
         </div>

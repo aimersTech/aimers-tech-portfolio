@@ -3,12 +3,9 @@ import {
     Github,
     Instagram,
     Linkedin,
-    LucideProps,
-    MapPin,
     Twitter,
     Youtube,
 } from "lucide-react";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 type TIcon = {
     href: string

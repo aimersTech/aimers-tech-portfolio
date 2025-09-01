@@ -25,12 +25,12 @@ const TechGlobal = () => {
               <h1 className="text-[40px] lg:text-[40px] font-bold leading-tight">
                 <span className="text-cyan-400">Hey!</span>
                 <br />
-                We're <span className="text-cyan-400">Aimers Tech Global</span>
+                We are <span className="text-cyan-400">Aimers Tech Global</span>
               </h1>
             </div>
-            
+
             <p className="text-gray-300 text-lg lg:text-xl leading-relaxed max-w-2xl">
-              We're a forward-thinking technology company dedicated to transforming ideas into reality. We specialize in crafting innovative digital solutions that drive business growth and user engagement. Our team blends creativity with cutting-edge technology to solve real-world challenges with precision and impact. Our mission is to empower businesses with technology that inspires progress and delivers impact. Collaboration and creativity are at the heart of everything we build. We don't just develop products — we craft experiences that shape the future.
+              We are a forward-thinking technology company dedicated to transforming ideas into reality. We specialize in crafting innovative digital solutions that drive business growth and user engagement. Our team blends creativity with cutting-edge technology to solve real-world challenges with precision and impact. Our mission is to empower businesses with technology that inspires progress and delivers impact. Collaboration and creativity are at the heart of everything we build. We do not just develop products — we craft experiences that shape the future.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ const TechGlobal = () => {
           <div className="relative">
             {/* Dotted Line Decoration */}
             <div className="absolute -top-4 -right-4 w-full h-full border-2 border-dotted border-blue-500 opacity-30 rounded-lg"></div>
-            
+
             <div className="grid grid-cols-2 gap-4 relative z-10">
               {/* Top Row */}
               <div className="space-y-4">
@@ -50,7 +50,7 @@ const TechGlobal = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                
+
                 {/* Image 3 - Bottom Left */}
                 <div className="w-full h-56 rounded-lg overflow-hidden shadow-xl">
                   <Image
@@ -70,7 +70,7 @@ const TechGlobal = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                
+
                 {/* Image 4 - Bottom Right */}
                 <div className="w-full h-48 rounded-lg overflow-hidden shadow-xl">
                   <Image
@@ -92,7 +92,7 @@ const TechGlobal = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              
+
               {/* Image 6 - Bottom Right */}
               <div className="w-full h-44 rounded-lg overflow-hidden shadow-xl">
                 <Image
