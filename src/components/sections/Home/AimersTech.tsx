@@ -2,8 +2,8 @@ import React from 'react';
 
 const AimersTechSection = () => {
   return (
-    <section className="bg-gray-800 text-white py-[118px] px-5 lg:px-10">
-      <div className="max-w-8xl mx-auto">
+    <section className="bg-gray-800 text-white py-[118px] ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-16 justify-items-center">
 
           {/* Left Content */}

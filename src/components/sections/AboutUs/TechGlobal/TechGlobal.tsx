@@ -11,13 +11,13 @@ const TechGlobal = () => {
   // Replace these URLs with your actual image paths
 
   return (
-    <section className="bg-black text-white min-h-screen relative overflow-hidden">
+    <section className="bg-black text-white min-h-screen relative overflow-hidden container mx-auto px-4 sm:px-6 lg:px-8">
       {/* Geometric Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_35%,rgba(255,255,255,.1)_35%,rgba(255,255,255,.1)_65%,transparent_65%),linear-gradient(-45deg,transparent_35%,rgba(255,255,255,.1)_35%,rgba(255,255,255,.1)_65%,transparent_65%)] bg-[length:20px_20px]"></div>
       </div>
 
-      <div className="max-w-8xl mx-auto px-2 py-16 lg:py-24 relative z-10">
+      <div className="py-16 lg:py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 ">
           {/* Left Content */}
           <div className="space-y-8">

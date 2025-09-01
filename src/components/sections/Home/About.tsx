@@ -70,21 +70,21 @@ const AboutUsSection = () => {
   };
 
   return (
-    <section className="bg-black text-white py-16 px-6 overflow-hidden relative">
+    <section className="bg-black text-white py-16  overflow-hidden relative">
       {/* Geometric Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_35%,rgba(255,255,255,.1)_35%,rgba(255,255,255,.1)_65%,transparent_65%),linear-gradient(-45deg,transparent_35%,rgba(255,255,255,.1)_35%,rgba(255,255,255,.1)_65%,transparent_65%)] bg-[length:20px_20px]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Content */}
         <div className="text-center mb-16 space-y-6">
           <h2 className="text-4xl lg:text-5xl font-bold">
             About <span className="text-cyan-400 underline decoration-cyan-400 decoration-2 underline-offset-4">Us</span>
           </h2>
-          
+
           <p className="text-gray-300 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            We're an optimistic and gratitude-filled group of remote workers dedicated 
+            We're an optimistic and gratitude-filled group of remote workers dedicated
             to creating a product our customers will use and love.
           </p>
 
@@ -100,7 +100,7 @@ const AboutUsSection = () => {
         {/* Image Slider */}
         <div className="relative">
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex space-x-4 transition-transform duration-1000 ease-in-out"
               style={{ transform: getTransform() }}
             >
@@ -131,11 +131,10 @@ const AboutUsSection = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? 'bg-cyan-400 scale-125' 
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                  ? 'bg-cyan-400 scale-125'
                   : 'bg-gray-600 hover:bg-gray-400'
-              }`}
+                }`}
             />
           ))}
         </div>
