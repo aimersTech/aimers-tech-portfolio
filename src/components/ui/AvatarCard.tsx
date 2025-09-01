@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { IAimers } from "@/app/constants/aimersDetails";
+import { IAimers } from "@/constants/aimersDetails";
 import avatar from "../../../public/useravatar.png";
 
 interface AvatarCardProps {
