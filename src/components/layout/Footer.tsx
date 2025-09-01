@@ -3,14 +3,13 @@ import logo from "../../assets/logo.png";
 import {
   footerData,
   footerSocialIcons,
-  TIcon,
 } from "@/constants/footerData";
 import { MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-10">
+      <div className="container mx-auto px-6 sm:px-6 lg:px-8 py-10 flex flex-col gap-10">
         <div className="flex justify-between flex-wrap gap-8">
           {/* first section with logo  */}
           <div className="flex flex-col gap-5 max-w-sm">
@@ -86,10 +85,11 @@ export default function Footer() {
         <div className="relative flex flex-col gap-3 md:gap-0 md:flex-row w-full items-center justify-between">
           {/* Left side - icons */}
           <div className="flex gap-3 md:gap-5 items-center">
-            {footerSocialIcons.map((icn: TIcon, idx) => {
-              const Icon = icn.icon;
-              return <Icon key={idx} className="text-[#00D9FF]" />;
-            })}
+            {footerSocialIcons.map(({ href, target, rel, icon: Icon }, idx) => (
+              <a key={idx} href={href} target={target} rel={rel}>
+                <Icon className="text-[#00D9FF] h-6 w-6 hover:text-cyan-300 cursor-pointer" />
+              </a>
+            ))}
           </div>
 
           {/* Center - copyright */}

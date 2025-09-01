@@ -1,29 +1,57 @@
 import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  LucideProps,
-  MapPin,
-  Twitter,
-  Youtube,
+    Facebook,
+    Github,
+    Instagram,
+    Linkedin,
+    Twitter,
+    Youtube,
 } from "lucide-react";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
-export type TIcon = {
-  icon: ForwardRefExoticComponent<
-    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
-  >;
-};
+type TIcon = {
+    href: string
+    target?: string
+    rel?: string
+    icon: React.ElementType
+}
 
 export const footerSocialIcons: TIcon[] = [
-    { icon: Facebook },
-    { icon: Instagram },
-    { icon: Linkedin },
-    { icon: Github },
-    { icon: Youtube },
-    { icon: Twitter },
-];
+    {
+        href: "https://www.facebook.com/profile.php?id=61578696980378",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Facebook,
+    },
+    {
+        href: "https://www.instagram.com/aimers.tech.global/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Instagram,
+    },
+    {
+        href: "https://linkedin.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Linkedin,
+    },
+    {
+        href: "https://github.com/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Github,
+    },
+    {
+        href: "https://www.youtube.com/@aimers.tech.global",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Youtube,
+    },
+    {
+        href: "https://x.com/aimerstech_dd",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        icon: Twitter,
+    },
+]
 
 export interface IFooterDataElement {
     heading: string;
