@@ -101,7 +101,7 @@ const TechStory = () => {
               Founded on July 13th, 2025, Aimers Tech Global emerged as a bold startup with a mission to merge creativity with technology in meaningful ways. What began as a small team of passionate innovators has grown into a multidisciplinary company working across UI/UX design, UX research, AI-powered development, and full-stack software solutions.
               <br />
               <br />
-              From day one, we’ve believed that great digital products begin with understanding the people who use them. That’s why our foundation is rooted in human-centered design and deep research—uncovering user needs, behaviors, and pain points to craft seamless, intuitive experiences. Our design philosophy isn't just about beauty—it's about purpose, clarity, and impact.
+              From day one, we have believed that great digital products begin with understanding the people who use them. That’s why our foundation is rooted in human-centered design and deep research—uncovering user needs, behaviors, and pain points to craft seamless, intuitive experiences. Our design philosophy is not just about beauty—it is about purpose, clarity, and impact.
               <br />
               <br />
               On the tech side, we harness the power of artificial intelligence and modern development tools to build scalable, efficient, and smart systems. Whether it’s creating an interactive interface, conducting usability studies, or deploying AI-generated solutions, every step we take is driven by innovation and precision.
@@ -110,8 +110,8 @@ const TechStory = () => {
               Today, Aimers Tech Global stands as a growing global team—collaborating across borders, industries, and ideas. We don’t just deliver digital products; we create meaningful experiences that connect people and technology in powerful new ways.
               <br />
               <br />
-              We're not just building the future.
-              We're designing it, researching it, and engineering it—one idea at a time.
+              We are not just building the future.
+              We are designing it, researching it, and engineering it—one idea at a time.
             </p>
           </div>
         </div>
