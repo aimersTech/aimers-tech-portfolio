@@ -3,7 +3,7 @@ import AvatarCard from '@/components/ui/AvatarCard';
 
 const KnowTheAimers = () => {
   return (
-    <div className="">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-start py-16">
         <h2 className="text-white text-[40px] underline font-semibold mb-6">
           Know The <span className="text-[#1DE5DB]">Aimers</span>
