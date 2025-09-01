@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 import MainWrapper from "@/components/layout/MainWrapper";
+
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // all weights

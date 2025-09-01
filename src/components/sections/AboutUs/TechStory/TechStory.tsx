@@ -104,10 +104,10 @@ const TechStory = () => {
               From day one, we have believed that great digital products begin with understanding the people who use them. That is why our foundation is rooted in human-centered design and deep research—uncovering user needs, behaviors, and pain points to craft seamless, intuitive experiences. Our design philosophy is not just about beauty, it is about purpose, clarity, and impact.
               <br />
               <br />
-              On the tech side, we harness the power of artificial intelligence and modern development tools to build scalable, efficient, and smart systems. Whether it’s creating an interactive interface, conducting usability studies, or deploying AI-generated solutions, every step we take is driven by innovation and precision.
+              On the tech side, we harness the power of artificial intelligence and modern development tools to build scalable, efficient, and smart systems. Whether it iss creating an interactive interface, conducting usability studies, or deploying AI-generated solutions, every step we take is driven by innovation and precision.
               <br />
               <br />
-              Today, Aimers Tech Global stands as a growing global team—collaborating across borders, industries, and ideas. We don’t just deliver digital products; we create meaningful experiences that connect people and technology in powerful new ways.
+              Today, Aimers Tech Global stands as a growing global team—collaborating across borders, industries, and ideas. We do not just deliver digital products; we create meaningful experiences that connect people and technology in powerful new ways.
               <br />
               <br />
               We are not just building the future.
