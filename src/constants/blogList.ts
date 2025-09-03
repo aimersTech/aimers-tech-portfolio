@@ -28,7 +28,7 @@ export const Blogs: IBlogs[] = [
   },
   {
     id: 3,
-    title: "25 LinkedIn Stats To Know For In 2025",
+    title: "25 LinkedIn Stats To Know For In 2026",
     description:
       "In this article, you’ll find 20+ essential LinkedIn statistics that reveal the platform’s reach, effectiveness, and continued growth.",
     image: "/blog3.png",
