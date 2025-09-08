@@ -33,7 +33,7 @@ export default function HomeBanner() {
         {/* Button */}
         <div className="flex justify-center">
           <Link href='/contact'>
-          <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden hover:cursor-pointer">
+          <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden hover:cursor-pointer hover:bg-cyan-400 hover:text-black">
             <span className="relative z-10 flex items-center gap-2">
               Get In touch →
             </span>
