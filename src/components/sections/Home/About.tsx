@@ -94,7 +94,7 @@ const AboutUsSection = () => {
 
           {/* CTA Button */}
           <div className="pt-6">
-            <button className="group inline-flex items-center space-x-2 px-8 py-4 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 rounded-lg font-medium">
+            <button className="group inline-flex items-center space-x-2 px-8 py-4 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 rounded-lg font-medium hover:cursor-pointer">
               <span>Know About Us</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>

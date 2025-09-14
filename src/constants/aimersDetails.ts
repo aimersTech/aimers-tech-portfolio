@@ -34,10 +34,5 @@ export const Aimers: IAimers[] = [
         name: "MD. Tahsin Ferdous",
         expertise: "Software Engineer",
         location: "Dhaka, Bangladesh"
-    },
-    {
-        name: "Yeasin Howlader Emon",
-        expertise: "Full Stack Developer",
-        location: "Dhaka, Bangladesh"
-    },
+    }
 ]

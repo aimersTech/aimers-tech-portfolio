@@ -66,7 +66,7 @@ const ProjectSection = () => {
                     <Link href={`/projects/${project.id}`}>
                       <Button
                         size="sm"
-                        className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 text-xs"
+                        className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 text-xs hover:cursor-pointer"
                       >
                         View Project
                       </Button>
@@ -79,7 +79,7 @@ const ProjectSection = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-gray-600 text-gray-300 hover:bg-gray-800 px-4 py-2 text-xs bg-transparent"
+                        className="border-gray-600 text-gray-300 hover:bg-gray-800 px-4 py-2 text-xs bg-transparent hover:cursor-pointer"
                       >
                         Code
                       </Button>
