@@ -15,7 +15,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({ index, member }) => {
       className="p-6 rounded-md border border-gray-900 hover:shadow-lg transition-shadow duration-300"
     >
       <div className="flex flex-col items-start">
-        <div className="w-full h-80 relative mb-4">
+        <div className="w-full h-60 sm:h-72 md:h-80 relative mb-4">
           <Image
             src={avatar}
             alt={member.name}
