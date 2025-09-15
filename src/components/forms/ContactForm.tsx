@@ -14,8 +14,8 @@ const ContactForm = () => {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col container mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-start">
-        <h1 className="text-4xl font-bold text-cyan-400">
-          You need a partner.
+        <h1 className="text-5xl font-bold ">
+          You need a <span className="text-[#1DE5DB]">partner</span>.
           <br />
           We’re here to help.
         </h1>
@@ -32,39 +32,54 @@ const ContactForm = () => {
             Send us a message
           </h2>
           <div className="space-y-4">
-            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
+            {/* Name */}
+            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 focus-within:border-cyan-500 transition">
               <label className="block text-gray-400 mb-2 text-sm sm:text-base">
                 Name
               </label>
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-2 bg-transparent border-none text-sm sm:text-base text-white focus:outline-none"
+                className="w-full p-2 bg-transparent text-sm sm:text-base text-white
+                           border border-transparent rounded-md
+                           focus:border-cyan-200 focus:ring-1 focus:ring-cyan-200
+                           outline-none transition"
               />
             </div>
-            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
+
+            {/* Email */}
+            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 focus-within:border-cyan-500 transition">
               <label className="block text-gray-400 mb-2 text-sm sm:text-base">
                 Email
               </label>
               <input
                 type="email"
                 placeholder="Enter Email..."
-                className="w-full p-2 bg-transparent border-none text-sm sm:text-base text-white focus:outline-none"
+                className="w-full p-2 bg-transparent text-sm sm:text-base text-white
+                           border border-transparent rounded-md
+                           focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500
+                           outline-none transition"
               />
             </div>
-            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
+
+            {/* Project */}
+            <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 focus-within:border-cyan-500 transition">
               <label className="block text-gray-400 mb-2 text-sm sm:text-base">
                 Project
               </label>
               <textarea
                 placeholder="Tell us about your project..."
-                className="w-full p-2 bg-transparent border-none text-sm sm:text-base text-white focus:outline-none h-24 sm:h-32"
+                className="w-full p-2 bg-transparent text-sm sm:text-base text-white
+                           border border-transparent rounded-md
+                           focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500
+                           outline-none transition h-24 sm:h-32"
               />
             </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
               <button
                 type="button"
-                className="bg-cyan-500 text-white p-2 rounded hover:bg-cyan-600 text-sm sm:text-base transition-colors w-full"
+                className="bg-cyan-500 text-white p-2 rounded hover:bg-cyan-600 text-sm sm:text-base transition-colors w-full hover:cursor-pointer"
               >
                 Send Message
               </button>
@@ -89,7 +104,7 @@ const ContactForm = () => {
                 <button
                   key={item}
                   type="button"
-                  className="bg-gray-800 text-white p-2 rounded hover:bg-gray-700 text-xs sm:text-sm transition-colors"
+                  className="bg-gray-800 text-white p-2 rounded hover:bg-gray-700 text-xs sm:text-sm transition-colors hover:cursor-pointer"
                 >
                   {item}
                 </button>
@@ -175,7 +190,7 @@ const ContactForm = () => {
             </p>
             <button
               type="button"
-              className="mt-2 bg-cyan-500 text-white p-2 rounded hover:bg-cyan-600 w-full text-sm sm:text-base transition-colors"
+              className="mt-2 bg-cyan-500 text-white p-2 rounded hover:bg-cyan-600 w-full text-sm sm:text-base transition-colors hover:cursor-pointer"
             >
               Schedule Consultation
             </button>

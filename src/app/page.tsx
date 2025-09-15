@@ -12,19 +12,19 @@ import HomeBanner from "@/components/Banners/Banner";
 export default function Home() {
   return (
     <div className="">
-      <HomeBanner/>
+      <HomeBanner />
       <OurProcessSection />
       <WhatWeDoSection />
       <AboutUsSection />
       <AimersTech />
-      <TechStackSection/>
-      <ProjectSection/>
+      <TechStackSection />
+      <ProjectSection />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
-{/* resuble components */}
-      <KnowTheAimers/>
+        {/* resuble components */}
+        <KnowTheAimers />
       </div>
-      <ContactForm/>
       <ExploreInsights />
+      <ContactForm />
     </div>
   );
 }
