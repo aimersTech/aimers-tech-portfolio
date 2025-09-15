@@ -32,7 +32,7 @@ function OurProcessSection() {
           <VerticalTimeline>
             {OurProcess.map((step, index) => (
               <VerticalTimelineElement
-                key={step.step}
+                key={index}
                 className="vertical-timeline-element--work"
                 iconStyle={{
                   background: "#1DE5DB",

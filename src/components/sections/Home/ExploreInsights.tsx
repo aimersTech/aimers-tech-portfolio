@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ArrowRight, Glasses } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { Featured, Articles } from "@/constants/exploreInsights";
 
 const ExploreInsights = () => {
@@ -15,40 +16,28 @@ const ExploreInsights = () => {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Featured Article (Left) */}
+          {/* Featured Article */}
           <div className="lg:col-span-2 flex flex-col">
-            <div className="relative mb-6">
+            <div className="mb-6">
               <Image
                 src={Featured.image}
                 alt={Featured.title}
                 width={800}
                 height={400}
-                className="rounded-lg object-cover w-full h-[350px]"
+                className="rounded-lg object-cover w-full"
               />
-              {/* Blue Overlay */}
-              <div className="absolute inset-0 bg-cyan-600/60 rounded-lg"></div>
-              {/* Centered text/logo overlay (optional if using branding) */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">{Featured.overlayText}</h3>
-              </div>
             </div>
-
-            <h3 className="text-xl sm:text-2xl font-semibold mb-3">
-              {Featured.title}
-            </h3>
-            <p className="text-gray-300 text-sm sm:text-base mb-4">
-              {Featured.description}
-            </p>
+            <h3 className="text-2xl font-semibold mb-3">{Featured.title}</h3>
+            <p className="text-gray-300 mb-4">{Featured.description}</p>
 
             {/* Meta Info */}
-            <div className="flex items-center text-xs sm:text-sm text-gray-400 mb-6">
+            <div className="flex items-center text-sm text-gray-400 mb-6">
               <span>{Featured.date}</span>
               <span className="flex items-center ml-4">
                 <Glasses size={14} className="mr-1" /> {Featured.readTime}
               </span>
             </div>
 
-            {/* Author */}
             <div className="flex items-center mb-6">
               <Image
                 src={Featured.author.avatar}
@@ -58,30 +47,31 @@ const ExploreInsights = () => {
                 className="rounded-full mr-3"
               />
               <div>
-                <p className="font-medium text-sm sm:text-base">
-                  {Featured.author.name}
-                </p>
-                <p className="text-xs text-gray-400">{Featured.author.role}</p>
+                <p className="font-medium">{Featured.author.name}</p>
+                <p className="text-sm text-gray-400">{Featured.author.role}</p>
               </div>
             </div>
 
             {/* Button */}
-            <button className="inline-flex self-start px-5 py-2 rounded-md bg-cyan-500 text-white items-center gap-2 hover:bg-cyan-600 transition hover:cursor-pointer">
+            <button className="inline-flex self-start px-5 py-2 rounded-md border border-cyan-400 text-cyan-400 items-center gap-2 hover:bg-cyan-400 hover:text-black transition hover:cursor-pointer">
               Read More <ArrowRight size={16} />
             </button>
           </div>
 
           {/* Right Column Articles */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-10">
             {Articles.map((article, idx) => (
-              <div key={idx} className="flex flex-col">
+              <div
+                key={idx}
+                className="flex flex-col border-b border-gray-700 pb-8"
+              >
                 <div className="mb-4">
                   <Image
                     src={article.image}
                     alt={article.title}
                     width={400}
                     height={200}
-                    className="rounded-md object-cover w-full h-[160px]"
+                    className="rounded-md object-cover w-full"
                   />
                 </div>
                 <h4 className="text-lg font-semibold mb-2">{article.title}</h4>
@@ -90,32 +80,31 @@ const ExploreInsights = () => {
                 </p>
 
                 {/* Meta */}
-                <div className="flex items-center text-xs sm:text-sm text-gray-400 mb-3">
+                <div className="flex items-center text-sm text-gray-400 mb-4">
                   <span>{article.date}</span>
                   <span className="flex items-center ml-4">
                     <Glasses size={14} className="mr-1" /> {article.readTime}
                   </span>
                 </div>
 
-                {/* Author */}
                 <div className="flex items-center mb-4">
                   <Image
                     src={article.author.avatar}
                     alt={article.author.name}
-                    width={32}
-                    height={32}
+                    width={36}
+                    height={36}
                     className="rounded-full mr-3"
                   />
                   <div>
-                    <p className="font-medium text-sm">
-                      {article.author.name}
+                    <p className="font-medium">{article.author.name}</p>
+                    <p className="text-xs text-gray-400">
+                      {article.author.role}
                     </p>
-                    <p className="text-xs text-gray-400">{article.author.role}</p>
                   </div>
                 </div>
 
                 {/* Button */}
-                <button className="self-start px-4 py-1.5 rounded-md bg-cyan-500 text-white flex items-center gap-2 hover:bg-cyan-600 transition hover:cursor-pointer">
+                <button className="self-start px-4 py-1.5 rounded-md border border-cyan-400 text-cyan-400 flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition hover:cursor-pointer">
                   Read More <ArrowRight size={14} />
                 </button>
               </div>
@@ -123,12 +112,11 @@ const ExploreInsights = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-12 flex justify-center">
           <Link href="/blogs">
-            <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-md flex items-center gap-2 transition hover:cursor-pointer">
-              View All Blogs <ArrowRight size={18} />
-            </button>
+            <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 hover:cursor-pointer">
+              View All Blogs <ArrowRight className="ml-2" />
+            </Button>
           </Link>
         </div>
       </div>
