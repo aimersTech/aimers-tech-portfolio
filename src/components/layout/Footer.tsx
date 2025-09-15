@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           {/* company */}
-          <div className="flex flex-col gap-5 mt-3">
+          <div className="flex flex-col gap-3 md:gap-5 mt-3">
             <div className="w-fit">
               <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.company.heading}
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           {/* services */}
-          <div className="flex flex-col gap-5 mt-3">
+          <div className="flex flex-col gap-3 md:gap-5 mt-3">
             <div className="w-fit">
               <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.services.heading}
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           {/* support */}
-          <div className="flex flex-col gap-5 mt-3">
+          <div className="flex flex-col gap-3 md:gap-5 mt-3">
             <div className="w-fit">
               <h2 className="text-white font-bold font-dmsans text-lg md:text-xl">
                 {footerData.support.heading}

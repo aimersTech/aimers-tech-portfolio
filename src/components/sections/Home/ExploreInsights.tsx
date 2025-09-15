@@ -53,7 +53,7 @@ const ExploreInsights = () => {
             </div>
 
             {/* Button */}
-            <button className="inline-flex self-start px-5 py-2 rounded-md border border-cyan-400 text-cyan-400 items-center gap-2 hover:bg-cyan-400 hover:text-black transition">
+            <button className="inline-flex self-start px-5 py-2 rounded-md border border-cyan-400 text-cyan-400 items-center gap-2 hover:bg-cyan-400 hover:text-black transition hover:cursor-pointer">
               Read More <ArrowRight size={16} />
             </button>
           </div>
@@ -104,7 +104,7 @@ const ExploreInsights = () => {
                 </div>
 
                 {/* Button */}
-                <button className="self-start px-4 py-1.5 rounded-md border border-cyan-400 text-cyan-400 flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition">
+                <button className="self-start px-4 py-1.5 rounded-md border border-cyan-400 text-cyan-400 flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition hover:cursor-pointer">
                   Read More <ArrowRight size={14} />
                 </button>
               </div>
@@ -114,7 +114,7 @@ const ExploreInsights = () => {
 
         <div className="mt-12 flex justify-center">
           <Link href="/blogs">
-            <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3">
+            <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 hover:cursor-pointer">
               View All Blogs <ArrowRight className="ml-2" />
             </Button>
           </Link>

@@ -18,7 +18,8 @@ function WhatWeDoSection() {
             What <span className="text-[#1DE5DB]">We Do</span>
           </h2>
           <p className="text-white text-base lg:text-xl max-w-2xl mx-auto leading-relaxed">
-            We provide comprehensive technology solutions tailored to your business needs
+            We provide comprehensive technology solutions tailored to your
+            business needs
           </p>
         </div>
 
@@ -26,25 +27,40 @@ function WhatWeDoSection() {
           {WhatWeDo.map((item, index) => (
             <div
               key={index}
-              className="bg-black h-[324px] p-6 rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-black p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start space-y-4">
                 {/* Icon */}
-                <div className="mb-4">
+                <div>
                   {index === 0 && <Code2 className="w-8 h-8 text-[#00A3E0]" />}
-                  {index === 1 && <BrainCircuit className="w-8 h-8 text-[#A100FF]" />}
+                  {index === 1 && (
+                    <BrainCircuit className="w-8 h-8 text-[#A100FF]" />
+                  )}
                   {index === 2 && <Rocket className="w-8 h-8 text-[#00FF00]" />}
-                  {index === 3 && <Smartphone className="w-8 h-8 text-[#FF4500]" />}
-                  {index === 4 && <Database className="w-8 h-8 text-[#FF00FF]" />}
+                  {index === 3 && (
+                    <Smartphone className="w-8 h-8 text-[#FF4500]" />
+                  )}
+                  {index === 4 && (
+                    <Database className="w-8 h-8 text-[#FF00FF]" />
+                  )}
                   {index === 5 && <Cloud className="w-8 h-8 text-[#00CED1]" />}
                 </div>
+
                 {/* Title and Description */}
-                <h3 className="text-white text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400 text-lg mb-4">{item.description}</p>
+                <h3 className="text-white text-lg font-semibold">
+                  {item.title}
+                </h3>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {item.description}
+                </p>
+
                 {/* Options */}
-                <ul className="list-none">
+                <ul className="list-none space-y-2">
                   {item.options.map((option, optionIndex) => (
-                    <li key={optionIndex} className="flex items-center text-white text-sm mb-2">
+                    <li
+                      key={optionIndex}
+                      className="flex items-center text-white text-sm"
+                    >
                       <span className="w-2 h-2 bg-[#1DE5DB] rounded-full mr-2"></span>
                       {option}
                     </li>
