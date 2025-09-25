@@ -20,7 +20,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({ index, member }) => {
             src={avatar}
             alt={member.name}
             fill
-            className="object-cover rounded-md"
+            className="object-cover rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
             sizes="(max-width: 768px) 100vw,
                    (max-width: 1200px) 50vw,
                    33vw"
