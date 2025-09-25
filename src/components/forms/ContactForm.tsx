@@ -46,7 +46,7 @@ const ContactForm = () => {
             <span className="text-cyan-400">We&apos;re </span>here to help.
           </h1>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl">
-            Ready to start your next project? We'd love to hear from you. Let's
+            Ready to start your next project? We would love to hear from you. Lets
             discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -67,7 +67,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700 
+                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700
                            focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400
                            transition-all duration-200"
                 />
@@ -79,7 +79,7 @@ const ContactForm = () => {
                 <input
                   type="email"
                   placeholder="Enter Email..."
-                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700 
+                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700
                            focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400
                            transition-all duration-200"
                 />
@@ -91,7 +91,7 @@ const ContactForm = () => {
                 <textarea
                   placeholder="Tell us about your project"
                   rows={6}
-                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700 
+                  className="w-full px-4 py-4 bg-gray-900 text-white rounded-lg border border-gray-700
                            focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400
                            transition-all duration-200 resize-none"
                 />
@@ -124,7 +124,7 @@ const ContactForm = () => {
             </div>
 
             {/* Send Button */}
-            <button className="w-full bg-cyan-400 hover:bg-cyan-500 text-black font-medium py-4 px-6 rounded-lg 
+            <button className="w-full bg-cyan-400 hover:bg-cyan-500 text-black font-medium py-4 px-6 rounded-lg
                              transition-all duration-200 flex items-center justify-center gap-2">
               <span>Send Message</span>
               <Send size={18} />
@@ -186,7 +186,7 @@ const ContactForm = () => {
                   href="https://www.facebook.com/profile.php?id=61578696980378"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400 
+                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
                            transition-all duration-200 hover:bg-gray-800"
                 >
                   <Facebook className="text-cyan-400 h-5 w-5" />
@@ -196,7 +196,7 @@ const ContactForm = () => {
                   href="https://www.instagram.com/aimers.tech.global/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400 
+                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
                            transition-all duration-200 hover:bg-gray-800"
                 >
                   <Instagram className="text-cyan-400 h-5 w-5" />
@@ -206,7 +206,7 @@ const ContactForm = () => {
                   href="https://linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400 
+                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
                            transition-all duration-200 hover:bg-gray-800"
                 >
                   <Linkedin className="text-cyan-400 h-5 w-5" />
@@ -216,7 +216,7 @@ const ContactForm = () => {
                   href="https://www.youtube.com/@aimers.tech.global"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400 
+                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
                            transition-all duration-200 hover:bg-gray-800"
                 >
                   <Youtube className="text-cyan-400 h-5 w-5" />
@@ -226,7 +226,7 @@ const ContactForm = () => {
                   href="https://x.com/aimerstech_dd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400 
+                  className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
                            transition-all duration-200 hover:bg-gray-800"
                 >
                   <Twitter className="text-cyan-400 h-5 w-5" />
@@ -243,8 +243,8 @@ const ContactForm = () => {
                 Schedule a free consultation to discuss your project requirements
                 and get a personalized quote.
               </p>
-              <button className="w-full bg-transparent border-2 border-cyan-400 text-cyan-400 
-                               hover:bg-cyan-400 hover:text-black font-medium py-3 px-6 rounded-lg 
+              <button className="w-full bg-transparent border-2 border-cyan-400 text-cyan-400
+                               hover:bg-cyan-400 hover:text-black font-medium py-3 px-6 rounded-lg
                                transition-all duration-200">
                 Schedule Consultation
               </button>
