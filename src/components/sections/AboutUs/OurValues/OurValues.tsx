@@ -6,7 +6,7 @@ const OurValues = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center py-16">
-        <h2 className="text-white text-[40px] underline font-ro font-semibold mb-6 ">
+        <h2 className="text-white text-[40px] underline font-ro font-semibold mb-6">
           Our <span className="text-[#1DE5DB]">Value</span>
         </h2>
         <p className="text-white text-base lg:text-xl max-w-6xl mx-auto leading-relaxed">

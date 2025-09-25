@@ -6,7 +6,7 @@ export interface IAimers {
   description?: string;
   site?: string;
   joined?: string;
-  tag?: string; 
+  tag?: string;
 }
 
 export const Aimers: IAimers[] = [
@@ -75,6 +75,18 @@ export const Aimers: IAimers[] = [
         expertise: "Software Engineer",
         location: "Dhaka, Bangladesh",
         image: "/avatars/tahsin.png",
+        description: `I'm Md. Tahsin Ferdous, a passionate Software Engineer dedicated to building reliable, efficient, and impactful software solutions. My journey began with a curiosity about how technology shapes our world, which soon evolved into a drive to solve real-world problems through code.
+
+        I specialize in developing robust, user-centric applications with clean, scalable architecture. Always eager to collaborate and learn, I strive to push the boundaries of what's possible with software. I believe great software is built on thoughtful design and continuous improvement. With every project, my focus remains on delivering solutions that are both innovative and meaningful.`,
+        site: "https://tahsin.dev",
+        joined: "July 22, 2025",
+        tag: "Engineering",
+    },
+    {
+        name: "Yeasin Howlader Emon",
+        expertise: "Full Stack Developer",
+        location: "Dhaka, Bangladesh",
+        image: "/avatars/emon.png",
         description: `I'm Md. Tahsin Ferdous, a passionate Software Engineer dedicated to building reliable, efficient, and impactful software solutions. My journey began with a curiosity about how technology shapes our world, which soon evolved into a drive to solve real-world problems through code.
 
         I specialize in developing robust, user-centric applications with clean, scalable architecture. Always eager to collaborate and learn, I strive to push the boundaries of what's possible with software. I believe great software is built on thoughtful design and continuous improvement. With every project, my focus remains on delivering solutions that are both innovative and meaningful.`,
