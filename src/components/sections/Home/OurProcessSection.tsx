@@ -16,7 +16,7 @@ function OurProcessSection() {
         {/* Section Header */}
         <div className="text-center py-16">
           <h2 className="text-white text-4xl md:text-5xl underline font-semibold mb-6">
-            Our <span className="text-[#1DE5DB]">Process</span>
+            Our <span className="text-[#00D9FF]">Process</span>
           </h2>
           <p className="text-white text-base lg:text-xl max-w-2xl mx-auto leading-relaxed">
             A proven methodology that ensures successful project delivery from{" "}
