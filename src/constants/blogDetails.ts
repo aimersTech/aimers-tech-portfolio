@@ -2,9 +2,6 @@ import blogAuthor1 from '../assets/individualBlog/blog1/blogAuthor-1.png';
 import blogAuthorLargeImg1 from '../assets/individualBlog/blog1/blogAuthorLarge-1.png';
 import sunglassIcon from '../assets/individualBlog/blog1/sunglassIcon.png';
 import bannerPic1 from '../assets/individualBlog/blog1/banner.png';
-import blogAuthor2 from '../assets/individualBlog/blog1/blogAuthor-1.png';
-import blogAuthorLargeImg2 from '../assets/individualBlog/blog1/blogAuthorLarge-1.png';
-import bannerPic2 from '../assets/individualBlog/blog1/banner.png';
 
 
 //blog2

@@ -11,7 +11,7 @@ const ProjectSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-white underline decoration-[#FFFFFF] decoration-1 underline-offset-[15px] text-5xl font-semibold mb-6">
             Our <span className="text-cyan-400">Projects</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">

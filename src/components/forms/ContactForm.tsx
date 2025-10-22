@@ -46,7 +46,7 @@ const ContactForm = () => {
             <span className="text-cyan-400">We&apos;re </span>here to help.
           </h1>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl">
-            Ready to start your next project? We would love to hear from you. Lets
+            Ready to start your next project? We&apos;d love to hear from you. Let&apos;s
             discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -203,7 +203,7 @@ const ContactForm = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/company/aimers-tech-global"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400
