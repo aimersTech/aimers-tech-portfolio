@@ -15,7 +15,7 @@ function OurProcessSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Section Header */}
         <div className="text-center py-16">
-          <h2 className="text-white text-4xl md:text-5xl underline font-semibold mb-6">
+          <h2 className="text-white underline decoration-[#FFFFFF] decoration-1 underline-offset-[15px] text-5xl font-semibold mb-6">
             Our <span className="text-[#1DE5DB]">Process</span>
           </h2>
           <p className="text-white text-base lg:text-xl max-w-2xl mx-auto leading-relaxed">
