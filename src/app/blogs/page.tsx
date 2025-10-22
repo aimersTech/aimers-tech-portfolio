@@ -9,8 +9,8 @@ const page = () => {
     <section className="bg-black text-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Section Header */}
-        <h2 className="text-5xl font-bold text-center mb-12">
-          <span className="text-cyan-400 underline">Blogs</span>
+        <h2 className=" text-white underline decoration-[#FFFFFF] decoration-1 underline-offset-[15px] text-5xl font-semibold  text-center mb-12">
+          <p className="text-cyan-400 ">Blogs</p>
         </h2>
 
         {/* Blogs Grid */}

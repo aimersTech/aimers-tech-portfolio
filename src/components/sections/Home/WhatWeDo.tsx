@@ -14,7 +14,7 @@ function WhatWeDoSection() {
     <div className="bg-[#2F2F2F] min-h-screen w-full font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-center py-16">
-          <h2 className="text-[#FFFFFF] underline decoration-[#1DE5DB] underline-offset-8 text-5xl font-semibold mb-6">
+          <h2 className="text-white underline decoration-[#FFFFFF] decoration-1 underline-offset-[15px] text-5xl font-semibold mb-6">
             What <span className="text-[#1DE5DB]">We Do</span>
           </h2>
           <p className="text-white text-base lg:text-xl max-w-2xl mx-auto leading-relaxed">
