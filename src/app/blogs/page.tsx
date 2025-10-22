@@ -14,11 +14,11 @@ const page = () => {
         </h2>
 
         {/* Blogs Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {Blogs.map((blog) => (
             <Link href={`/blogs/${blog.id}`} key={blog.id}>
               <div
-                className="bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 transition"
+                className="bg-black border max-w-[430px] h-[380px] flex flex-col justify-between items-center border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 transition"
               >
                 {/* Image */}
                 <div className="relative w-full h-48">
@@ -32,10 +32,10 @@ const page = () => {
 
                 {/* Content */}
                 <div className="p-5">
-                  <h3 className="text-[20px] font-semibold mb-3 hover:text-cyan-400 cursor-pointer">
+                  <h3 className="text-[20px] font-semibold mb-3 hover:text-cyan-400 cursor-pointer line-clamp-2">
                     {blog.title}
                   </h3>
-                  <p className="text-gray-400 text-[15px] mb-4 line-clamp-3">
+                  <p className="text-gray-400 text-[15px] mb-4 line-clamp-2">
                     {blog.description}
                   </p>
 
@@ -46,7 +46,7 @@ const page = () => {
                       {blog.date}
                     </div>
                     <div className="flex items-center gap-2">
-                      <Glasses size={14} />
+                      <Glasses size={14} color="#00D9FF"/>
                       {blog.readTime}
                     </div>
                   </div>
