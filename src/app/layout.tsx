@@ -4,6 +4,8 @@ import "./globals.css";
 import MainWrapper from "@/components/layout/MainWrapper";
 import ScrollToTop from "@/components/atoms/ScrollToTop";
 
+import { Toaster } from 'react-hot-toast';
+
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // all weights
@@ -44,6 +46,7 @@ export default function RootLayout({
           {children}
         </MainWrapper>
         <ScrollToTop />
+        <Toaster/>
       </body>
     </html>
   );
