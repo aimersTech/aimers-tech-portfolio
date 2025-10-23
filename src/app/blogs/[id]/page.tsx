@@ -3,13 +3,28 @@ import { blogDetails } from "@/constants/blogDetails";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const BlogDetails = () => {
   const { id } = useParams();
   const blog = blogDetails.find((blog) => blog.id === Number(id));
+  const [blogContent, setBlogContent] = useState("");
+
+  useEffect(() => {
+    if (blog?.body1) {
+      fetch(blog.body1)
+        .then((res) => res.text())
+        .then((html) => setBlogContent(html))
+        .catch((err) => console.error("Error loading blog HTML:", err));
+    }
+  }, [blog]);
 
   if (!blog) {
-    return <div className="container mx-auto  grid place-items-center h-[50vh] text-white text-xl">Blog not found</div>;
+    return (
+      <div className="container mx-auto grid place-items-center h-[50vh] text-white text-xl">
+        Blog not found
+      </div>
+    );
   }
 
   return (
@@ -19,10 +34,8 @@ const BlogDetails = () => {
         <span>{blog.heading2}</span>
       </h1>
 
-      <div className="flex flex-col md:flex-row 
-      self-start md:self-center items-start md:items-center 
-      gap-2 md:gap-6 lg:gap-8">
-        {/* first */}
+      {/* Author section */}
+      <div className="flex flex-col md:flex-row self-start md:self-center items-start md:items-center gap-2 md:gap-6 lg:gap-8">
         <div className="flex gap-3 items-center">
           <div className="rounded-xl">
             <Image
@@ -36,43 +49,64 @@ const BlogDetails = () => {
             <p className="text-[12px] md:text-sm">{blog.author.role}</p>
           </div>
         </div>
-        {/* vertical line */}
+
         <div className="h-5 w-[2px] bg-white hidden md:flex" />
-        {/* second */}
+
         <div className="flex flex-col items-start">
           <p className="text-[12px] md:text-xl text-white">
             {blog.changable.status} {blog.changable.issueDate}
           </p>
           <div className="flex items-center gap-2">
-            <Image src={blog.changable.icon} alt="nice-try-didi" className="h-2 w-4 md:h-3 md:w-7" />
+            <Image
+              src={blog.changable.icon}
+              alt="icon"
+              className="h-2 w-4 md:h-3 md:w-7"
+            />
             <p className="text-[12px] md:text-sm">{blog.changable.timeToRead}</p>
           </div>
         </div>
       </div>
+
+      {/* Banner image */}
       <div>
         <Image src={blog.bannerImg} alt="blog-banner" />
       </div>
-      <h2 className="text-xl md:text-3xl self-start font-bold">{blog.subheading}</h2>
-      <p className="text-sm md:text-base">{blog.body1}</p>
-      <p className="text-sm md:text-base">{blog.body2}</p>
 
-      <div className=" w-full flex justify-between items-center px-8 py-4 md:px-16 md:py-8 bg-[#D9D9D933]">
-        <div className=" flex flex-col gap-4 md:gap-14">
+      {/* Subheading */}
+      <h2 className="text-xl md:text-3xl self-start font-bold">
+        {blog.subheading}
+      </h2>
+
+      {/* Blog HTML content */}
+      <div
+        className="prose prose-invert max-w-none text-sm md:text-base leading-relaxed"
+        dangerouslySetInnerHTML={{ __html: blogContent }}
+      />
+
+      {/* More posts footer */}
+      <div className="w-full flex justify-between items-center px-8 py-4 md:px-16 md:py-8 bg-[#D9D9D933]">
+        <div className="flex flex-col gap-4 md:gap-14">
           <div className="flex flex-col gap-2 md:gap-8">
-          <div className="w-fit border-b border-[#FFFFFF]"><p className="text-[12px] sm:text-sm md:text-xl">More Posts From</p></div>
-          <p className="font-dmsans text-base sm:text-xl md:text-3xl">{blog.author.name}</p>
+            <div className="w-fit border-b border-[#FFFFFF]">
+              <p className="text-[12px] sm:text-sm md:text-xl">More Posts From</p>
+            </div>
+            <p className="font-dmsans text-base sm:text-xl md:text-3xl">
+              {blog.author.name}
+            </p>
+          </div>
+
+          <div className="flex gap-1 md:gap-2 items-center cursor-pointer">
+            <p className="text-[12px] sm:text-sm md:text-xl">Go To Blogs</p>
+            <ArrowRight className="mt-1 size-4 md:size-5" />
+          </div>
         </div>
 
-        <div className="flex gap-1 md:gap-2 items-center cursor-pointer">
-          <p className="text-[12px] sm:text-sm md:text-xl">Go To Blogs</p>
-          <ArrowRight className="mt-1 size-4 md:size-5"/>
-        </div>
-        </div>
         <div>
-          <Image src={blog.author.img1} className="
-          w-full
-          md:h-40 md:w-72 
-          lg:h-48 lg:w-80" alt="author-large-image"/>
+          <Image
+            src={blog.author.img1}
+            className="w-full md:h-40 md:w-72 lg:h-48 lg:w-80"
+            alt="author-large-image"
+          />
         </div>
       </div>
     </div>

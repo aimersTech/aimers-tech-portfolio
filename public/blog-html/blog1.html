@@ -1,0 +1,60 @@
+<p>I was recently going through the implementations and complexities of common sorting algorithms such as Quicksort and Mergesort. I noticed that many programmers, including myself, often ignore the constant factors when calculating time complexity. This is typically acceptable for a high-level analysis, but there are situations where this oversight can lead to misunderstandings about the efficiency of algorithms.</p>
+
+<p>To illustrate, both Quicksort and Mergesort have an average time complexity of O(n log n). Mergesort consistently achieves this complexity in all cases, making it reliable and predictable. Quicksort, on the other hand, has a worst-case time complexity of O(n²), which occurs when the pivot selection leads to highly unbalanced partitions. In these scenarios, Quicksort can perform as poorly as simple algorithms like Selection Sort. However, Quicksort is still generally considered more efficient in practice because it has an average-case time complexity of O(n log n) and tends to be faster due to its lower constant factors.</p>
+
+<h3>This leads to a critical question: If Quicksort has a worst-case time complexity of O(n²) and Mergesort consistently performs at O(n log n), why is Quicksort often preferred? Isn't Mergesort inherently faster?</h3>
+
+<h4>Let's break it down.</h4>
+
+<p>Suppose you have this simple function to print every item in an array.</p>
+
+<pre><code>void printItem1(vector&lt;int&gt; &amp;arr) {
+    for (int i = 0; i &lt; arr.size(); i++) {
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    }
+}
+</code></pre>
+
+<p>This function goes through every item in the array and prints it out. Because it iterates over the whole array once, this function runs in O(n) time. Now suppose you change this function so it sleeps for 1 second before it prints out each item:</p>
+
+<pre><code>#include &lt;thread&gt; // For sleep functionality
+#include &lt;chrono&gt; // For specifying time duration
+
+void printItem2(vector&lt;int&gt; &amp;arr) {
+    for (int i = 0; i &lt; arr.size(); i++) {
+        this_thread::sleep_for(chrono::seconds(1)); // Sleep for 1 second
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    }
+}
+</code></pre>
+
+<p>Before it prints out an item, it will pause for 1 second. Suppose you print an array of five items using both functions.</p>
+
+<pre><code>[1, 2, 3, 4, 5]
+printItem1: 1 2 3 4 5
+printItem2: &lt;sleep&gt; 1 &lt;sleep&gt; 2 &lt;sleep&gt; 3 &lt;sleep&gt; 4 &lt;sleep&gt; 5
+</code></pre>
+
+<p>Both functions loop through the list once, so they're both O(n) time. Which one do you think will be faster in practice? I think printItem1 will be much faster because it doesn't pause for 1 second before printing an item. So even though both functions are the same speed in Big O notation, printItem1 is faster in practice.</p>
+
+<p>When you write Big O notation like O(n), it really means this:</p>
+
+<pre><code>C * n</code></pre>
+
+<p>Where <code>n</code> = number of items and <code>C</code> is some fixed amount of time that your algorithm takes. It's called the constant. For example, it might be 10 milliseconds * n for printItem1 versus 1 second * n for printItem2.</p>
+
+<p>We usually ignore that constant, because if two algorithms have different Big O times, the constant doesn't matter. Take binary search and simple search, for example. Suppose both algorithms had these constants:</p>
+
+<pre><code>10ms * n for simple search
+1 sec * log n for binary search
+</code></pre>
+
+<p>We might say, "Wow! Simple search has a constant of 10 milliseconds, but binary search has a constant of 1 second. Simple search is way faster!" Now suppose you're searching a list of 1 billion elements. Here are the times:</p>
+
+<pre><code>simple search | 10ms * 1 billion = 116 days
+binary search | 1s * log₂(1 billion) ≈ 1s * 30 ≈ 30 seconds
+</code></pre>
+
+<p>As you can see, binary search is still way faster. That constant didn't make a difference at all.</p>
+
+<p>But sometimes the constant can make a difference. Quicksort versus Mergesort is one example. Quicksort has a smaller constant than Mergesort. So if they're both O(n log n) time, Quicksort is faster. And Quicksort is faster in practice because it hits the average case way more often than the worst case.</p>
