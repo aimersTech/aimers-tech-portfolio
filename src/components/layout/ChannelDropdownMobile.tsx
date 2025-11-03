@@ -66,7 +66,6 @@ const ChannelDropdownMobile = ({
         activeTextColor="text-text-dark-green"
         dropdownMenuLink="/"
         setIsOpen={setIsOpen}
-        lastItem={true}
       />
     </div>
   );

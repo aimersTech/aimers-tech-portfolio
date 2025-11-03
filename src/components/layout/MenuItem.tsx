@@ -39,8 +39,7 @@ const MenuItem = ({
         return "";
       }
     } else {
-      console.log("Hello");
-      console.log(children);
+      
       if (pathName.includes(children!.toString()?.toLowerCase())) {
         return "!bg-[#FAF8F1] text-text-toxic-blue";
       } else {

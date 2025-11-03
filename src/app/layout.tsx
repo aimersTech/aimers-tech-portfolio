@@ -2,18 +2,21 @@ import type { Metadata } from "next";
 import { DM_Sans, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 import MainWrapper from "@/components/layout/MainWrapper";
-import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/atoms/ScrollToTop";
+
+import { Toaster } from 'react-hot-toast';
+
 const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // all weights
-  variable: '--font-dmSans',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // all weights
+  variable: "--font-dmSans",
+  display: "swap",
 });
 const roboto = Roboto_Serif({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // all weights
-  variable: '--font-roboto',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // all weights
+  variable: "--font-roboto",
+  display: "swap",
 });
 export const metadata: Metadata = {
   title: "Aimers Tech",
@@ -26,8 +29,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: "/logo.png",
+  },
 };
-
 
 export default function RootLayout({
   children,
@@ -36,10 +41,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} ${dmSans.variable} antialiased`}
-      >
-       <MainWrapper>{children} </MainWrapper>
+      <body className={`${roboto.variable} ${dmSans.variable} antialiased`}>
+        <MainWrapper>
+          {children}
+        </MainWrapper>
+        <ScrollToTop />
+        <Toaster/>
       </body>
     </html>
   );

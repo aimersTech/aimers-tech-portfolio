@@ -7,115 +7,6 @@ import image5 from "../../../../assests/globalTech/f86ad9d679c6ff6809bd5bd87855c
 import image6 from "../../../../assests/globalTech/first.jpg";
 import Image from 'next/image';
 
-// const TechGlobal = () => {
-//     // Replace these URLs with your actual image paths
-
-//     return (
-//         <section className="bg-black text-white mb-[120px] relative overflow-hidden container mx-auto ">
-
-//             <div className="py-16 lg:py-[180px] relative z-10">
-//                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 ">
-//                     {/* Left Content */}
-//                     <div className="space-y-8 ">
-//                         <div className="">
-//                             <h1 className="text-[30px] lg:text-[40px] font-bold leading-tight">
-//                                 <span className="text-cyan-400">Hey!</span>
-//                                 <br />
-//                                 We're <span className="text-cyan-400">Aimers Tech Global</span>
-//                             </h1>
-//                         </div>
-
-//                         <p className="text-gray-300 text-lg lg:text-xl leading-relaxed max-w-2xl">
-//                             We're a forward-thinking technology company dedicated to transforming ideas into reality. We specialize in crafting innovative digital solutions that drive business growth and user engagement. Our team blends creativity with cutting-edge technology to solve real-world challenges with precision and impact. Our mission is to empower businesses with technology that inspires progress and delivers impact. Collaboration and creativity are at the heart of everything we build. We don't just develop products — we craft experiences that shape the future.
-//                         </p>
-//                     </div>
-
-
-
-
-//                     {/* Top Row */}
-//                     <div className="lg:block  hidden ">
-//                         {/* Image 1 - Top Left */}
-//                         <div className="w-[190px] h-[135px] absolute top-[191px] left-[780px] rounded-lg overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image1}
-//                                 alt="Team collaboration"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-
-
-//                         <div className="w-[200px] h-[143px] absolute top-[347px] left-[836px] rounded-lg overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image3}
-//                                 alt="Team meeting"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-
-
-
-//                         <div className="w-[280px] h-[200px] absolute top-[100px] left-[992px] rounded-lg overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image6}
-//                                 alt="Development team"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-
-
-//                         <div className="w-[282px] h-[200px] absolute top-[323px] left-[1058px] rounded-lg overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image4}
-//                                 alt="Design process"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-
-
-
-
-//                         <div className="w-[214px] h-[153px] absolute top-[511px] left-[778px] rounded-lg overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image5}
-//                                 alt="Team discussion"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-
-
-//                         <div className="w-[282px] h-[200px] rounded-lg absolute top-[546px] left-[1014px]  overflow-hidden shadow-xl">
-//                             <Image
-//                                 src={image2}
-//                                 alt="Workspace"
-//                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                             />
-//                         </div>
-//                     </div>
-//                     <div className="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
-//                         {[image1, image3, image6, image4, image5, image2].map((img, idx) => (
-//                             <div key={idx} className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
-//                                 <Image
-//                                     src={img}
-//                                     alt={`Responsive image ${idx + 1}`}
-//                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-//                                 />
-//                             </div>
-//                         ))}
-//                     </div>
-//                 </div>
-//             </div>
-
-
-
-//         </section>
-//     );
-// };
-
-
-// export default TechGlobal;
-
-
 
 const TechGlobal = () => {
     return (
@@ -128,11 +19,11 @@ const TechGlobal = () => {
                             <h1 className="text-[30px] lg:text-[40px] font-bold leading-tight">
                                 <span className="text-cyan-400">Hey!</span>
                                 <br />
-                                We're <span className="text-cyan-400">Aimers Tech Global</span>
+                                We are <span className="text-cyan-400">Aimers Tech Global</span>
                             </h1>
 
                             <p className="text-gray-300 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto xl:mx-0">
-                                We're a forward-thinking technology company dedicated to transforming ideas into reality. We specialize in crafting innovative digital solutions that drive business growth and user engagement. Our team blends creativity with cutting-edge technology to solve real-world challenges with precision and impact. Our mission is to empower businesses with technology that inspires progress and delivers impact. Collaboration and creativity are at the heart of everything we build. We don’t just develop products — we craft experiences that shape the future.
+                                We are a forward-thinking technology company dedicated to transforming ideas into reality. We specialize in crafting innovative digital solutions that drive business growth and user engagement. Our team blends creativity with cutting-edge technology to solve real-world challenges with precision and impact. Our mission is to empower businesses with technology that inspires progress and delivers impact. Collaboration and creativity are at the heart of everything we build. We don’t just develop products — we craft experiences that shape the future.
                             </p>
                         </div>
 

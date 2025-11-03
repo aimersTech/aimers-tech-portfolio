@@ -1,15 +1,27 @@
 
-// import { TNavbarDropdownMainMenuProps } from "@/types/TNavbarDropdownMainMenuProps";
 import Link from "next/link";
 import React from "react";
 import ButtonText from "../shared/ButtonText";
+export type TNavbarDropdownMainMenuProps = {
+    isHovered: boolean;
+    setIsHovered: React.Dispatch<React.SetStateAction<boolean>>;
+    dropdownMenuIndex: number;
+    setDropdownMenuIndex: React.Dispatch<React.SetStateAction<number>>;
+
+    dropdownMenuName: string;
+    index: number;
+    activeBgColor: string;
+    activeTextColor: string;
+    className?: string;
+    dropdownMenuLink?: string;
+    isLastItem?: boolean;
+}
 
 const NavbarDowndownMenuItem = ({
   isHovered,
   setIsHovered,
   dropdownMenuIndex,
   setDropdownMenuIndex,
-  dropdownMenuIcon,
   dropdownMenuName,
   index,
   activeBgColor,
@@ -17,7 +29,7 @@ const NavbarDowndownMenuItem = ({
   className,
   dropdownMenuLink,
   isLastItem = false,
-}: any ) => {
+}: TNavbarDropdownMainMenuProps ) => {
   return (
     <div>
       <Link
@@ -32,7 +44,6 @@ const NavbarDowndownMenuItem = ({
             !isLastItem && "border-b border-[#FFFFFF1A]"
           } flex justify-start items-center gap-2.5 cursor-pointer transition-all duration-[400ms] ease-in-out ${className}`}
         >
-          <div className="w-8 h-8">{dropdownMenuIcon}</div>
           <ButtonText
             className={` ${
               index === dropdownMenuIndex

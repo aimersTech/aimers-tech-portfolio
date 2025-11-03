@@ -14,7 +14,7 @@ export default function HomeBanner() {
       {/* Content */}
       <div className="relative max-w-3xl mx-auto px-6">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#1DE5DB]  to-[#9B8FE4] bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-[#1DE5DB]  to-[#9B8FE4] bg-clip-text text-transparent">
           Aimers Tech Global
         </h1>
 
@@ -33,7 +33,7 @@ export default function HomeBanner() {
         {/* Button */}
         <div className="flex justify-center">
           <Link href='/contact'>
-          <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden">
+          <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden hover:cursor-pointer hover:bg-cyan-400 hover:text-black">
             <span className="relative z-10 flex items-center gap-2">
               Get In touch →
             </span>
@@ -47,9 +47,9 @@ export default function HomeBanner() {
       {/* Services Section */}
       <div className="relative  mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:px-9 px-4  ">
         {/* Card 1 */}
-        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-8 shadow-lg text-center ">
-          <div className="w-14 h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-cyan-500">
-            <Code2 className="text-white w-7 h-7" />
+        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-5 md:p-8 shadow-lg text-center ">
+          <div className="w-10 h-10 md:w-14 md:h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-cyan-500">
+            <Code2 className="text-white w-5 h-5 md:w-7 md:h-7" />
           </div>
           <h3 className="text-lg font-bold mb-2 border-b-3 border-[#1DE5DB]  inline-block">
             Web Development
@@ -62,9 +62,9 @@ export default function HomeBanner() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-8 shadow-lg text-center ">
-          <div className="w-14 h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-pink-500">
-            <Zap className="text-white w-7 h-7" />
+        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-5 md:p-8 shadow-lg text-center ">
+          <div className="w-10 h-10 md:w-14 md:h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-pink-500">
+            <Zap className="text-white w-5 h-5 md:w-7 md:h-7" />
           </div>
           <h3 className="text-lg font-bold mb-2 border-b-3 border-[#1DE5DB] inline-block">
             AI Integration
@@ -77,9 +77,9 @@ export default function HomeBanner() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-8 shadow-lg text-center ">
-          <div className="w-14 h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-green-500">
-            <Users className="text-white w-7 h-7" />
+        <div className="bg-gray-800 border-gray-700 border transition-all duration-500 transform hover:-translate-y-2 hover:border-[#1DE5DB]/50 rounded-2xl p-5 md:p-8 shadow-lg text-center ">
+          <div className="w-10 h-10 md:w-14 md:h-14 mx-auto  mb-4 flex items-center justify-center rounded-full bg-green-500">
+            <Users className="text-white w-5 h-5 md:w-7 md:h-7" />
           </div>
           <h3 className="text-lg font-bold mb-2 border-b-3 border-[#1DE5DB] inline-block">
             MVP Launch

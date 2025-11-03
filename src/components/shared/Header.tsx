@@ -1,18 +1,26 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation"; // ✅ for active route
 import Image from "next/image";
 import logo from '../../assets/Aimers logo.svg';
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const linkClasses = (path: string) =>
+    pathname === path
+      ? "text-cyan-400 border-b-2 border-cyan-400 transition-colors"
+      : "hover:text-cyan-400 transition-colors";
+
   return (
-    <nav className="bg-black text-white z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-6 flex items-center justify-between py-2 ">
+    <nav className="bg-black text-white z-50 sticky top-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-6 flex items-center justify-between py-2">
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="block">
@@ -28,11 +36,11 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 lg:gap-8 text-sm md:text-base font-medium">
-          <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
-          <Link href="/services" className="hover:text-cyan-400 transition-colors">Services</Link>
-          <Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact us</Link>
-          <Link href="/about" className="hover:text-cyan-400 transition-colors">About Us</Link>
-          <Link href="/blogs" className="hover:text-cyan-400 transition-colors">Insights</Link>
+          <Link href="/" className={linkClasses("/")}>Home</Link>
+          <Link href="/services" className={linkClasses("/services")}>Services</Link>
+          <Link href="/contact" className={linkClasses("/contact")}>Contact us</Link>
+          <Link href="/about" className={linkClasses("/about")}>About Us</Link>
+          <Link href="/blogs" className={linkClasses("/blogs")}>Insights</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -59,15 +67,14 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-black border-t border-cyan-500">
           <nav className="flex flex-col items-center py-4 space-y-4 text-sm font-medium">
-            <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
-            <Link href="/services" className="hover:text-cyan-400 transition-colors">Services</Link>
-            <Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact us</Link>
-            <Link href="/about" className="hover:text-cyan-400 transition-colors">About Us</Link>
-            <Link href="/blogs" className="hover:text-cyan-400 transition-colors">Insights</Link>
+            <Link href="/" className={linkClasses("/")}>Home</Link>
+            <Link href="/services" className={linkClasses("/services")}>Services</Link>
+            <Link href="/contact" className={linkClasses("/contact")}>Contact us</Link>
+            <Link href="/about" className={linkClasses("/about")}>About Us</Link>
+            <Link href="/blogs" className={linkClasses("/blogs")}>Insights</Link>
           </nav>
         </div>
       )}
     </nav>
-
   );
 }

@@ -12,7 +12,7 @@ import MenuItem from "./MenuItem";
 import ServicesDropdown from "./ServicesDropdown";
 import AboutUsDropdown from "./AboutUsDropdown";
 import ChannelsDropdown from "./ChannelsDropdown";
-import InsightsDropdown from "./InsightsDropdown";
+
 import MobileNavMenu from "./MobileNavMenu";
 
 const Navbar = () => {
@@ -25,8 +25,6 @@ const Navbar = () => {
     useState(false);
 
   const [isAboutUsDropdownHovered, setIsAboutUsDropdownHovered] =
-    useState(false);
-  const [isInsightsDropdownHovered, setIsInsightsDropdownHovered] =
     useState(false);
 
   React.useEffect(() => {
@@ -43,14 +41,16 @@ const Navbar = () => {
 
   return (
     <header className="relative z-[999] sm:pt-[40.45px]">
-      <nav className="relative z-[100] px-5 py-5 sm:py-0 sm:px-[44px] lg:px-5 xl:px-8 min-[1400px]:px-[44px] max-w-[1608px] mx-auto bg-bg-dark-blue flex justify-between items-center">
-        <Link href="/" className="py-[35px] lg:py-[5px]">
+      <nav className="relative z-[100] px-5 py-5 sm:py-0 sm:px-[44px] lg:px-5 xl:px-8 min-[1400px]:px-[44px] max-w-[1608px] mx-auto 
+    bg-white/5 backdrop-blur-md backdrop-saturate-150 border-b border-t border-white/20 shadow-lg 
+    flex justify-between items-center ">
+        <Link href="/" className="lg:py-[5px] md:py-1">
           <Image
             src={logo}
             alt="logo"
             width={144.85}
             height={115}
-            className="w-[134px] h-[26.6px] sm:w-[144.85px] sm:h-[115px]"
+            className="w-[134px] h-[100.6px] sm:w-[144.85px] sm:h-[115px]"
           />
         </Link>
 
@@ -61,7 +61,6 @@ const Navbar = () => {
           <li
             onMouseOver={() => {
               setIsChannelsDropdownHovered(false);
-              setIsInsightsDropdownHovered(false);
               setIsAboutUsDropdownHovered(false);
             }}
             onMouseLeave={() => setIsServicesDropdownHovered(false)}
@@ -85,7 +84,6 @@ const Navbar = () => {
           <li
             onMouseOver={() => {
               setIsServicesDropdownHovered(false);
-              setIsInsightsDropdownHovered(false);
               setIsAboutUsDropdownHovered(false);
             }}
             onMouseLeave={() => setIsChannelsDropdownHovered(false)}
@@ -108,7 +106,6 @@ const Navbar = () => {
           <li
             onMouseOver={() => {
               setIsServicesDropdownHovered(false);
-              setIsInsightsDropdownHovered(false);
               setIsChannelsDropdownHovered(false);
             }}
             onMouseLeave={() => setIsAboutUsDropdownHovered(false)}

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-
 type MobileMenuItemProps = {
   href?: string;
   children: React.ReactNode;
@@ -43,8 +42,7 @@ const MobileMenuItem = ({
         return "";
       }
     } else {
-      // console.log("Hello");
-      // console.log(children);
+ 
       if (pathName.includes(children!.toString()?.toLowerCase())) {
         return "!bg-[#D0FF7333] text-text-toxic-blue !mx-0";
       } else {

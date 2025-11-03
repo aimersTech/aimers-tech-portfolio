@@ -1,0 +1,36 @@
+name: CI/CD - Deploy Next.js Docker App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  deploy:
+    # Run only when a PR is merged or a direct push to main
+    if: github.event_name == 'push' || (github.event.pull_request.merged == true)
+    runs-on: self-hosted
+
+    steps:
+      - name: Pull Latest Code
+        run: |
+          cd ~/aimers-tech-portfolio
+          git fetch --all
+          git pull origin main
+
+      - name: Rebuild & Restart Docker Container
+        run: |
+          cd ~/aimers-tech-portfolio
+
+          # Stop and remove old container (if running)
+          if [ "$(docker ps -q -f name=nextjs_app)" ]; then
+            docker stop nextjs_app
+            docker rm nextjs_app
+          fi
+
+          # Rebuild and start using docker-compose
+          docker compose up --build -d

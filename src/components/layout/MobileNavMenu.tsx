@@ -5,7 +5,7 @@ import MobileMenuItem from "./MobileMenuItem";
 import ServicesDropdownMobile from "./ServicesDropdownMobile";
 import ChannelDropdownMobile from "./ChannelDropdownMobile";
 import AboutDropdownMobile from "./AboutDropdownMobile";
-import InsightsDropdownMobile from "./InsightsDropdownMobile";
+
 
 const MobileNavMenu = ({
   isOpen,
@@ -24,11 +24,6 @@ const MobileNavMenu = ({
 
   const [isMobileAboutDropdownHovered, setIsMobileAboutDropdownHovered] =
     useState(false);
-
-  const [
-    isMobileInsightsDropdownHovered,
-    setIsMobileInsightsDropdownHovered,
-  ] = useState(false);
 
   const menuRef = React.useRef<HTMLUListElement>(null);
   const [height, setHeight] = useState("0px");
@@ -53,7 +48,7 @@ const MobileNavMenu = ({
       //     : "0px",
       // }}
       style={{ maxHeight: height }}
-      className={`bg-bg-dark-blue w-full absolute z-[30] top-[78px] sm:top-[120.45px] left-0 overflow-hidden overflow-y-auto transition-all duration-1000 ease-in-out xl:hidden flex flex-col justify-start items-center ${
+      className={`bg-black w-full absolute z-[30] top-[140px] sm:top-[120.45px] left-0 overflow-hidden overflow-y-auto transition-all duration-1000 ease-in-out xl:hidden flex flex-col justify-start items-center ${
         isOpen && "border-t border-border-light-blue/10"
       } nav-scrollbar`}
     >

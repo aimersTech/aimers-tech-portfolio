@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { IAimers } from "@/app/constants/aimersDetails";
+import { IAimers } from "@/constants/aimersDetails";
 import avatar from "../../../public/useravatar.png";
 
 interface AvatarCardProps {
@@ -15,12 +15,12 @@ const AvatarCard: React.FC<AvatarCardProps> = ({ index, member }) => {
       className="p-6 rounded-md border border-gray-900 hover:shadow-lg transition-shadow duration-300"
     >
       <div className="flex flex-col items-start">
-        <div className="w-full h-80 relative mb-4">
+        <div className="w-full h-60 sm:h-72 md:h-80 relative mb-4">
           <Image
             src={avatar}
             alt={member.name}
             fill
-            className="object-cover rounded-md"
+            className="object-cover rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
             sizes="(max-width: 768px) 100vw,
                    (max-width: 1200px) 50vw,
                    33vw"
