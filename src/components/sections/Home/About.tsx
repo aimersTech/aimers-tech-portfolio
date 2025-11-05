@@ -71,7 +71,7 @@ const AboutUsSection = () => {
 
           <div className="flex justify-center mt-12 sm:mt-[90px] mb-16 sm:mb-[130px]">
             <Link href="/contact">
-              <button className="relative group px-6 sm:px-8 py-2.5 sm:py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden text-sm sm:text-base">
+              <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden hover:cursor-pointer hover:bg-cyan-400 hover:text-black">
                 <span className="relative z-10 flex items-center gap-3">
                   Know About Us
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />

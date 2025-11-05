@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header className="relative z-[999] sm:pt-[40.45px]">
       <nav className="relative z-[100] px-5 py-5 sm:py-0 sm:px-[44px] lg:px-5 xl:px-8 min-[1400px]:px-[44px] max-w-[1608px] mx-auto 
-    bg-white/5 backdrop-blur-md backdrop-saturate-150 border-b border-t border-white/20 shadow-lg 
+    bg-gray-800 backdrop-blur-md backdrop-saturate-150 border-b border-t border-white/20 shadow-lg 
     flex justify-between items-center ">
         <Link href="/" className="lg:py-[5px] md:py-1">
           <Image
