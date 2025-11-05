@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -46,7 +46,35 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
 
-  --breakpoint-xs: 503px
+  --breakpoint-xs: 503px;
+}
+
+@theme {
+  --color-bg-primary: #000;
+  --color-bg-dark-blue: #005766;
+  --color-bg-light-blue: #ebfef8;
+  --color-bg-toxic-blue: #00d9ff;
+  --color-bg-minty-blue: #28eba7;
+
+  --color-primary: #000;
+  --color-secondary: #005766;
+  --color-text-dark-blue: #005766;
+  --color-text-light-blue: #ebfef8;
+  --color-text-toxic-blue: #00d9ff;
+  --color-text-minty-blue: #28eba7;
+
+  --color-border-dark-blue: #005766;
+  --color-border-light-blue: #ebfef8;
+  --color-border-toxic-blue: #00d9ff;
+  --color-border-minty-blue: #28eba7;
+
+  --color-bg-main-dark: #1a3234;
+  --color-text-main-dark: #1a3234;
+  --color-border-main-dark: #1a3234;
+
+  --color-bg-dark-purple: #1f1740;
+  --color-text-dark-purple: #1f1740;
+  --color-border-dark-purple: #1f1740;
 }
 
 :root {
@@ -123,8 +151,19 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
