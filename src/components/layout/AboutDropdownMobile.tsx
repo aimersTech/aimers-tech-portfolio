@@ -26,7 +26,7 @@ const AboutDropdownMobile = ({
         index={0}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/about/know-us"
+        dropdownMenuLink="/about/"
         setIsOpen={setIsOpen}
       />
 
@@ -39,7 +39,7 @@ const AboutDropdownMobile = ({
         index={1}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/about/join-the-aimers"
+        dropdownMenuLink="/about/"
         setIsOpen={setIsOpen}
       />
 
@@ -52,7 +52,7 @@ const AboutDropdownMobile = ({
         index={2}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/about/contact-us"
+        dropdownMenuLink="/about/"
         setIsOpen={setIsOpen}
       />
     </div>

@@ -16,7 +16,7 @@ const AboutUsDropdown = ({
 
   return (
     <div
-      className={`xl:block overflow-hidden ${
+      className={`xl:block rounded-3xl overflow-hidden ${
         isHovered && "py-[42.25px]"
       } px-[44.12px] bg-black absolute top-[120px] left-0 w-full ${
         isHovered ? "h-[469.5px]" : "h-0"
@@ -44,7 +44,7 @@ const AboutUsDropdown = ({
               index={0}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/know-us"
+              dropdownMenuLink="/about/"
             />
 
             <NavbarDowndownMenuItem
@@ -56,7 +56,7 @@ const AboutUsDropdown = ({
               index={1}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/join-the-aimers"
+              dropdownMenuLink="/about/"
             />
 
             <NavbarDowndownMenuItem
@@ -68,7 +68,7 @@ const AboutUsDropdown = ({
               index={2}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/contact-us"
+              dropdownMenuLink="/about/"
             />
 
           </div>

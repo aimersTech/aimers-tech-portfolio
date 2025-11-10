@@ -25,7 +25,7 @@ const ServicesDropdownMobile = ({
         index={0}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/services/ideation"
+        dropdownMenuLink="/services"
         setIsOpen={setIsOpen}
       />
 
@@ -38,7 +38,7 @@ const ServicesDropdownMobile = ({
         index={1}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/services/design"
+        dropdownMenuLink="/services"
         setIsOpen={setIsOpen}
       />
 
@@ -51,7 +51,7 @@ const ServicesDropdownMobile = ({
         index={2}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/services/development"
+        dropdownMenuLink="/services"
         setIsOpen={setIsOpen}
       />
 
@@ -64,7 +64,7 @@ const ServicesDropdownMobile = ({
         index={3}
         activeBgColor="bg-bg-light-blue"
         activeTextColor="text-text-dark-blue"
-        dropdownMenuLink="/services/cloud"
+        dropdownMenuLink="/services"
         setIsOpen={setIsOpen}
       />
 
