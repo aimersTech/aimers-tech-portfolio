@@ -70,7 +70,7 @@ const AboutUsSection = () => {
           </p>
 
           <div className="flex justify-center mt-12 sm:mt-[90px] mb-16 sm:mb-[130px]">
-            <Link href="/contact">
+            <Link href="/about">
               <button className="relative group px-8 py-3 font-semibold rounded-md border-2 border-cyan-400 text-white overflow-hidden hover:cursor-pointer hover:bg-cyan-400 hover:text-black">
                 <span className="relative z-10 flex items-center gap-3">
                   Know About Us

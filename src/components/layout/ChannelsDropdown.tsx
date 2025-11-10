@@ -16,11 +16,9 @@ const ChannelsDropdown = ({
 
   return (
     <div
-      className={`xl:block overflow-hidden ${
-        isHovered && "py-[42.25px]"
-      } px-[44.12px] bg-black absolute top-[120px] left-0 w-full ${
-        isHovered ? "h-[469.5px]" : "h-0"
-      } transition-all duration-[400ms] ease-in-out`}
+      className={`xl:block overflow-hidden ${isHovered && "py-[42.25px]"
+        } px-[44.12px] bg-black absolute top-[120px] left-0 w-full ${isHovered ? "h-[469.5px]" : "h-0"
+        } transition-all duration-[400ms] ease-in-out`}
     >
       <div className="absolute inset-0 z-0 w-full h-full bg-white/10"></div>
       <div className="relative z-[100] flex justify-between items-center gap-[145px]">
@@ -44,7 +42,7 @@ const ChannelsDropdown = ({
               index={0}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink=""
+              dropdownMenuLink="https://www.facebook.com/profile.php?id=61578696980378"
             />
 
             <NavbarDowndownMenuItem
@@ -56,7 +54,7 @@ const ChannelsDropdown = ({
               index={2}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink=""
+              dropdownMenuLink="https://www.linkedin.com/company/aimers-tech-global"
             />
             <NavbarDowndownMenuItem
               isHovered={isHovered}
@@ -67,7 +65,7 @@ const ChannelsDropdown = ({
               index={3}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink=""
+              dropdownMenuLink="https://github.com/aimersTech"
             />
 
             <NavbarDowndownMenuItem
@@ -79,7 +77,7 @@ const ChannelsDropdown = ({
               index={4}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink=""
+              dropdownMenuLink="https://www.youtube.com/@aimers.tech.global"
               isLastItem={true}
             />
           </div>

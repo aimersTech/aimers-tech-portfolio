@@ -29,19 +29,19 @@ const MenuItem = ({
     if (isLink) {
       if (href === "/") {
         if (pathName === "/") {
-          return "bg-[#FAF8F1] text-text-toxic-blue";
+          return "bg-transparent text-text-toxic-blue";
         } else {
           return "";
         }
       } else if (pathName.includes(href)) {
-        return "bg-[#FAF8F1] text-text-toxic-blue";
+        return "bg-transparent text-text-toxic-blue";
       } else {
         return "";
       }
     } else {
       
       if (pathName.includes(children!.toString()?.toLowerCase())) {
-        return "!bg-[#FAF8F1] text-text-toxic-blue";
+        return "!bg-transparent text-text-toxic-blue";
       } else {
         return "";
       }
@@ -57,7 +57,7 @@ const MenuItem = ({
             pathName,
             href || "/",
             isLink
-          )} hover:bg-bg-light-blue ${isMobile ? "px-5" : "px-3 min-[1400px]:px-6"
+          )} hover:bg-transparent ${isMobile ? "px-5" : "px-3 min-[1400px]:px-6"
             } py-3 text-text-light-blue hover:text-text-dark-blue text-base leading-[130%] font-bold flex justify-center items-center gap-1.5 transition-all duration-[400ms] ease-in-out`}
         >
           <span>{children}</span>
@@ -71,11 +71,11 @@ const MenuItem = ({
       ) : (
         <div
           onMouseOver={() => setIsHovered && setIsHovered(true)}
-          className={`hover:bg-bg-light-blue ${getActiveClass(
+          className={`hover:bg-transparent ${getActiveClass(
             pathName,
             href || "/",
             isLink
-          )} ${isMobile ? "px-6" : "px-3 min-[1400px]:px-6"} ${isHovered && "!bg-bg-light-blue !text-text-dark-blue"
+          )} ${isMobile ? "px-6" : "px-3 min-[1400px]:px-6"} ${isHovered && "!bg-transparent !text-text-dark-blue"
             } py-3 text-text-light-blue hover:text-text-dark-blue text-base leading-[130%] font-bold flex justify-center items-center gap-1.5 transition-all duration-[400ms] ease-in-out cursor-pointer`}
         >
           <span>{children}</span>

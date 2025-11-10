@@ -44,7 +44,7 @@ const InsightsDropdown = ({
               index={0}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/solutions/ideation"
+              dropdownMenuLink="/solutions/"
             />
 
             <NavbarDowndownMenuItem
@@ -56,7 +56,7 @@ const InsightsDropdown = ({
               index={1}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/solutions/design"
+              dropdownMenuLink="/solutions/"
             />
 
             <NavbarDowndownMenuItem
@@ -68,7 +68,7 @@ const InsightsDropdown = ({
               index={2}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/solutions/development"
+              dropdownMenuLink="/solutions/"
             />
 
             <NavbarDowndownMenuItem
@@ -80,7 +80,7 @@ const InsightsDropdown = ({
               index={3}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/solutions/cloud"
+              dropdownMenuLink="/solutions/"
               isLastItem={true}
             />
           </div>

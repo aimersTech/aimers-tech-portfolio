@@ -43,7 +43,7 @@ const ServicesDropdown = ({
               index={0}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/services/ideation"
+              dropdownMenuLink="/services"
             />
 
             <NavbarDowndownMenuItem
@@ -55,7 +55,7 @@ const ServicesDropdown = ({
               index={1}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/services/design"
+              dropdownMenuLink="/services"
             />
 
             <NavbarDowndownMenuItem
@@ -67,7 +67,7 @@ const ServicesDropdown = ({
               index={2}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/services/development"
+              dropdownMenuLink="/services"
             />
 
             <NavbarDowndownMenuItem
@@ -79,7 +79,7 @@ const ServicesDropdown = ({
               index={3}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/services/cloud"
+              dropdownMenuLink="/services"
               isLastItem={true}
             />
           </div>

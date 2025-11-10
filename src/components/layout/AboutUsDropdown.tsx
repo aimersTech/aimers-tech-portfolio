@@ -44,7 +44,7 @@ const AboutUsDropdown = ({
               index={0}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/know-us"
+              dropdownMenuLink="/about/"
             />
 
             <NavbarDowndownMenuItem
@@ -56,7 +56,7 @@ const AboutUsDropdown = ({
               index={1}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/join-the-aimers"
+              dropdownMenuLink="/about/"
             />
 
             <NavbarDowndownMenuItem
@@ -68,7 +68,7 @@ const AboutUsDropdown = ({
               index={2}
               activeBgColor="bg-bg-light-blue"
               activeTextColor="text-text-dark-blue"
-              dropdownMenuLink="/about/contact-us"
+              dropdownMenuLink="/about/"
             />
 
           </div>
