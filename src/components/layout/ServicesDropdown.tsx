@@ -17,8 +17,8 @@ const ServicesDropdown = ({
     <div
       className={`xl:block rounded-3xl overflow-hidden ${
         isHovered && "py-[42.25px]"
-      } px-[44.12px] bg-black absolute top-[120px] left-0 w-full ${
-        isHovered ? "h-[469.5px]" : "h-0"
+      } px-[44.12px] bg-black absolute top-[108px] left-0 w-full ${
+        isHovered ? "h-[400.5px]" : "h-0"
       } transition-all duration-[400ms] ease-in-out`}
     >
       <div className="absolute inset-0 z-0 w-full h-full bg-white/10"></div>
