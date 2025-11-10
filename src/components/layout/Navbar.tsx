@@ -11,6 +11,7 @@ import ServicesDropdown from "./ServicesDropdown";
 import AboutUsDropdown from "./AboutUsDropdown";
 import ChannelsDropdown from "./ChannelsDropdown";
 import MobileNavMenu from "./MobileNavMenu";
+import { div } from "framer-motion/client";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -147,7 +148,9 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <NavCrossIcon />
+            <div>
+              <NavCrossIcon />
+            </div>
           ) : (
             <div className="space-y-[5px]">
               <div className="w-[16.66px] h-[2px] bg-bg-minty-blue rounded-full"></div>

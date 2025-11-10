@@ -16,7 +16,7 @@ const AboutUsDropdown = ({
 
   return (
     <div
-      className={`xl:block overflow-hidden ${
+      className={`xl:block rounded-3xl overflow-hidden ${
         isHovered && "py-[42.25px]"
       } px-[44.12px] bg-black absolute top-[120px] left-0 w-full ${
         isHovered ? "h-[469.5px]" : "h-0"
