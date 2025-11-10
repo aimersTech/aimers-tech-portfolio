@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 
-import logo from "../../assets/logo2.png";
+import logo from "../../../public/logo.png";
 import NavCrossIcon from "@/styles/Svgs/NavCrossIcon";
 import MenuItem from "./MenuItem";
 import ServicesDropdown from "./ServicesDropdown";
@@ -57,24 +57,29 @@ const Navbar = () => {
     <header className="relative z-[999] sm:pt-[40.45px]">
       <nav
         ref={navRef}
-        className="relative z-[100] px-5 py-2 sm:py-0 sm:px-[44px] lg:px-5 xl:px-8 min-[1400px]:px-[44px] 
+        className="relative z-[100] px-5 py-6 xl:py-0 lg:py-4 md:py-4  lg:px-5 xl:px-8 min-[1400px] 
         max-w-[1608px] mx-auto bg-white/5 backdrop-blur-md backdrop-saturate-150 border-b border-t border-white/20 shadow-lg 
         flex justify-between items-center rounded-[100px]"
       >
         {/* Logo */}
         <Link href="/" className="lg:py-[5px] md:py-1">
-          <Image
-            src={logo}
-            alt="logo"
-            width={144.85}
-            height={115}
-            className="w-[134px] h-[100.6px] sm:w-[144.85px] sm:h-[115px]"
-          />
+          <div className="flex justify-center items-center ">
+            <Image
+              src={logo}
+              alt="Aimers Tech Global Logo"
+              className="w-[60px] h-[40.6px] sm:w-[70.85px] sm:h-[50px]"
+            />
+
+            <h1 className="text-white font-dmsans font-bold text-[20px] sm:text-md md:text-lg lg:text-[22px] relative right-1">
+              Aimers Tech
+            </h1>
+          </div>
+
         </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden xl:flex justify-end items-center gap-2.5">
-          <li className="py-[35px]">
+          <li className="py-[30px]">
             <MenuItem href="/">Home</MenuItem>
           </li>
 
@@ -83,7 +88,7 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter("services")}
             onMouseLeave={() => handleMouseLeave("services")}
             onClick={() => handleMenuClick("services")}
-            className="py-[35px]"
+            className="py-[30px]"
           >
             <MenuItem isLink={false} isIcon isHovered={openMenu === "services"}>
               Services
@@ -99,7 +104,7 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter("channels")}
             onMouseLeave={() => handleMouseLeave("channels")}
             onClick={() => handleMenuClick("channels")}
-            className="py-[35px]"
+            className="py-[30px]"
           >
             <MenuItem isLink={false} isIcon isHovered={openMenu === "channels"}>
               Channels
@@ -115,7 +120,7 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
             onClick={() => handleMenuClick("about")}
-            className="py-[35px]"
+            className="py-[30px]"
           >
             <MenuItem isLink={false} isIcon isHovered={openMenu === "about"}>
               About Us
@@ -126,11 +131,11 @@ const Navbar = () => {
             />
           </li>
 
-          <li className="py-[35px]">
+          <li className="py-[30px]">
             <MenuItem href="/blogs">Insights</MenuItem>
           </li>
 
-          <li className="py-[35px]">
+          <li className="py-[30px]">
             <Link
               href="/contact"
               className="px-[30px] py-3 bg-[#FAF8F1] text-nowrap text-text-dark-blue hover:bg-bg-toxic-blue hover:text-white text-base leading-[130%] font-bold rounded-[100px]"
@@ -142,9 +147,8 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`xl:hidden ${
-            isOpen ? "bg-bg-dark-purple" : "bg-bg-light-blue"
-          } w-[38px] h-[38px] rounded-full flex justify-center items-center`}
+          className={`xl:hidden ${isOpen ? "bg-bg-dark-purple" : "bg-bg-light-blue"
+            } w-[38px] h-[38px] rounded-full flex justify-center items-center`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
